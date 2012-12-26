@@ -19,3 +19,8 @@ http://www.vim.org/docs.php ).
     - http://vimgolf.com/
     - http://golf.shinh.org/
 
+* Link to Jekyll per request of the README.
+
+* http://shlomif-tech.livejournal.com/tag/vim
+    - http://shlomif.livejournal.com/tag/vim
+
