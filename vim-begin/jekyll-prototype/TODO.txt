@@ -1,0 +1,18 @@
+* Add ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf (see
+http://www.vim.org/docs.php ).
+
+* Add http://vim.wikia.com/wiki/Vim_Tips_Wiki (note - very disorganised).
+
+* Add http://vimcasts.org/ .
+
+* Add the <?xml ?> declaration for XHTML 5.
+
+* http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
+    - And especially: the first reply.
+
+* Link to : http://shop.oreilly.com/product/9780596529833.do
+
+* http://www.moolenaar.net/habits.html
+    * http://www.youtube.com/watch?v=eX9m3g5J-XA
+
+*
