@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
    <title>{{ page.title }}</title>
+   <base  href="http://www.shlomifish.org/vim-begin-temp-M90J67C27/_site/" />
    <meta name="author" content="Shlomi Fish" />
-   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
-   <meta name="readability-verification" content="QCzSs992GxmRYRKVpPeZ6LE2tS8aYKxsSSQKV8YM"/>
+   <link  href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
 
    <!-- syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/syntax.css" type="text/css" />
+   <link rel="stylesheet" href="css/syntax.css" type="text/css" />
 
    <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+
+   <!-- Print CSS -->
+   <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
 
    <!-- Typekit -->
    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
@@ -25,11 +28,10 @@ var WRInitTime=(new Date()).getTime();
 </script>
 <!-- ClickTale end of Top part -->
 
-<div class="site">
 <div class="title">
-<a href="/">Vim Beginner’s Site</a>
+<a href="">Vim Beginner’s Site</a>
 →
-<a class="extra" href="/">Home</a>
+<a class="extra" href="">Home</a>
 </div>
 
 <h3 class="hide">Main Navigation</h3>
@@ -37,32 +39,30 @@ var WRInitTime=(new Date()).getTime();
 <div id="main_nav_menu">
 <ul class="navbarmain">
 <li>
-<a href="/">Home</a>
+<a href="">Home</a>
 </li>
 <li>
-<a href="/about.html">About</a>
+<a href="about.html">About</a>
 </li>
 <li>
-<a href="/news/" title="Previous News Item">News</a>
+<a href="news/" title="Previous News Item">News</a>
 </li>
 <li>
-<a href="/links/" title="External Links to Other Resources">Links</a>
+<a href="links/" title="External Links to Other Resources">Links</a>
 </li>
 <li>
-<a href="/humour/" title="Vim Humour and Links to Vim Humour resources">Perl Humour</a>
+<a href="humour/" title="Vim Humour and Links to Vim Humour resources">Perl Humour</a>
 </li>
 </ul>
 <h2>
-<a href="/learn/" title="Why and how to learn Vim?">Learn Vim Now</a>
+<a href="learn/" title="Why and how to learn Vim?">Learn Vim Now</a>
 </h2>
 <h2>
-<a href="/resources/" title="Links to Online and Offline Resources for Learning Vim">Resources</a>
+<a href="resources/" title="Links to Online and Offline Resources for Learning Vim">Resources</a>
 </h2>
 <ul class="navbarnested">
 <li>
-<a href="/tutorials/">Online Tutorials</a>
-</li>
-</ul>
+<a href="tutorials/">Online Tutorials</a>
 </li>
 <li>
 <a href="books/">Books</a>
@@ -109,42 +109,45 @@ var WRInitTime=(new Date()).getTime();
 </li>
 </ul>
 <h2>
-<a href="platforms/">Platforms</a>
+<a  href="platforms/">Platforms</a>
 </h2>
 <ul class="navbarmain">
 <li>
-<a href="/platforms/mac/" title="Macintosh and PowerPC/PowerMac Platforms">Mac OS</a>
+<a href="platforms/mac/" title="Macintosh and PowerPC/PowerMac Platforms">Mac OS</a>
 </li>
 <li>
-<a href="/platforms/unix/">UNIX/Linux</a>
+<a href="platforms/unix/">UNIX/Linux</a>
 </li>
 <li>
-<a href="/platforms/windows/">Windows</a>
+<a href="platforms/windows/">Windows</a>
 </li>
 </ul>
 <h2>
-<a href="/contribute/" title="Contribute new content or corrections to this site">Contribute</a>
+<a href="contribute/" title="Contribute new content or corrections to this site">Contribute</a>
 </h2>
 <ul class="navbarmain">
 <li>
-<a href="/contribute/list/">Contributors List</a>
+<a href="contribute/list/">Contributors List</a>
 </li>
 <li>
-<a href="/source/">Site’s Source Code</a>
+<a href="source/">Site’s Source Code</a>
 </li>
 </ul>
+
+<div class="content" id="content">
 {{ content }}
+</div>
 
 <div class="footer">
 <div class="contact">
 <p>
 <b>Webmaster:</b>
-<a href="http://www.shlomifish.org/" rel="webmaster">Shlomi Fish</a><br />
-E-mail: <a href="mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a> .
+<a  href="http://www.shlomifish.org/" rel="author">Shlomi Fish</a><br />
+E-mail: <a  href="mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a> .
 </p>
 </div>
 <div class="rss">
-<a href="http://feeds.feedburner.com/tom-preston-werner">
+<a  href="http://feeds.feedburner.com/tom-preston-werner">
 <img src="/images/rss.png" alt="Subscribe to RSS Feed" />
 </a>
 </div>
@@ -153,7 +156,7 @@ E-mail: <a href="mailto:shlomif@shlomifish.org">shlomif@shlomifish.org</a> .
 <!-- Creative Commons License -->
 This work, unless noted otherwise is
 <b>licensed</b> under the <a rel="license"
-href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+ href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
 Attribution 3.0 Unported License</a> (or at your option any later
 version).<br />
 </p>
@@ -162,28 +165,6 @@ version).<br />
 </div>
 </div>
 </div>
-
-<!-- ClickTale Bottom part -->
-<div id="ClickTaleDiv" style="display: none;"></div>
-<script type="text/javascript">
-if(document.location.protocol!='https:')
-document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-if(typeof ClickTale=='function') ClickTale(206,0.3,"www03");
-</script>
-<!-- ClickTale end of Bottom part -->
-
-<!-- Google Analytics -->
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-6016902-1");
-pageTracker._trackPageview();
-</script>
-<!-- Google Analytics end -->
 
 </body>
 </html>
