@@ -15,4 +15,7 @@ http://www.vim.org/docs.php ).
 * http://www.moolenaar.net/habits.html
     * http://www.youtube.com/watch?v=eX9m3g5J-XA
 
-*
+* Golf:
+    - http://vimgolf.com/
+    - http://golf.shinh.org/
+
