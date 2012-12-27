@@ -24,3 +24,12 @@ http://www.vim.org/docs.php ).
 * http://shlomif-tech.livejournal.com/tag/vim
     - http://shlomif.livejournal.com/tag/vim
 
+* Vim Adventures - http://vim-adventures.com/
+    - issues with it:
+        - no saved games.
+        - Levels beyond the third are not free.
+
+* https://sites.google.com/site/oldwagner/home/vim-cheatsheet
+
+* https://sites.google.com/site/whatisvim/
+    * https://docs.google.com/spreadsheet/ccc?key=0AsVzyzwfTGNkdHZCaTNTVHUzNDVxV2E2OHJPTU1nYVE&hl=en#gid=8
