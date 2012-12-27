@@ -1,0 +1,7 @@
+* Add ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf (see
+http://www.vim.org/docs.php ).
+
+* Add the <?xml ?> declaration for XHTML 5.
+
+* Link to : http://shop.oreilly.com/product/9780596529833.do
+
