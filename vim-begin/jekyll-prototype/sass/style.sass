@@ -336,7 +336,14 @@ table.wiki-content-table *, code, table.wiki-content-table tr td span.fixed, tab
     -moz-border-radius: $radius
     border-radius: $radius
 
-.mswin_download_button
+.mswin_download_button a
     :background-color #5DEA17
     :padding 1em
+    :border green 2pt solid
+    :float right
     +rounded_corners(20px)
+    color: black
+    &:hover
+        background-color: #A1EB7C
+        color: #444
+        text-decoration: none
