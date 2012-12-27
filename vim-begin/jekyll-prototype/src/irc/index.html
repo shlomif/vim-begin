@@ -1,0 +1,103 @@
+---
+layout: default
+title: IRC Channels for Perl Questions and Answers
+---
+
+<h1>IRC Channels for Perl Question and Answers</h1>
+
+<h2 id="what-is-irc">What is the IRC?</h2>
+
+<p>
+IRC stands for <b>Internet Relay Chat</b>, and it is a distributed, real-time
+form
+of communication, that was common from relatively early in the history of
+the Internet, and is still very popular. IRC servers form networks of servers
+- each network is separated from the other networks and the servers of each
+network share the same chat-rooms, user profiles and messages. Each network
+has different rules and conventions and a different culture. This allows
+chat-rooms (called channels in IRC-jargon) with the same name to exist in
+different networks.
+</p>
+
+<p>
+Some popular IRC clients include the cross-platform
+<a href="http://www.mozilla.org/projects/rt-messaging/chatzilla/">Chatzilla</a>
+(which is part of <a href="http://www.mozilla.org/">the Mozilla project</a>
+and can be installed on top of Firefox),
+the Windows-based <a href="http://www.mirc.com/">mIRC</a> (which is shareware
+and not open-source) and <a href="http://www.xchat.org/">XChat</a>, a
+cross-platform IRC client for all UNIX systems including Linux and Mac OS X,
+and with a free-of-charge
+<a href="http://www.hexchat.org/">port
+for Windows</a>. By
+downloading one, you can log in to an IRC network and start chatting.
+</p>
+
+<p>
+IRC is a great way to get answers to questions quickly and easily. Just note
+that some networks are not recommended for asking Vim questions on, due to
+the treatment of beginner question, or general unfriendliness.
+</p>
+
+<h2 id="links">Links for More Information</h2>
+
+<ul>
+
+<li>
+<a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">Wikipedia page
+on the "Internet Relay Chat"</a>
+</li>
+
+<li>
+<a href="http://www.irchelp.org/">IRC Help</a> - comprehensive helps and FAQs
+about IRC.
+</li>
+
+<li>
+<a href="http://en.wikipedia.org/wiki/List_of_IRC_clients">The Wikipedia's
+List/Comparison of IRC Clients</a>
+</li>
+
+</ul>
+
+<define-tag irc_channel whitespace="delete">
+<preserve net chan />
+<set-var %attributes />
+<:{
+    my $net = "<get-var net />";
+    my $chan = "<get-var chan />";
+    my %servers =
+    (
+        'freenode' => "irc.freenode.net",
+        'efnet' => "irc.Prison.NET",
+        'oftc' => "irc.oftc.net",
+        'undernet' => "us.undernet.org",
+        'ircnet' => "ircnet.demon.co.uk",
+    );
+    if (!exists($servers{$net}))
+    {
+        die "Unknown network!";
+    }
+    print "<a href=\"irc://" . $servers{$net} . "/%23$chan\"><tt>#$chan</tt></a>";
+}:>
+<restore net chan />
+</define-tag>
+
+<h2 id="freenode"><a href="http://freenode.net/">FreeNode</a></h2>
+
+<p>
+This is most probably the best network for getting help in Perl and
+technical matters in general.
+</p>
+
+<p>
+Check the channel <irc_channel chan="vim" net="freenode" />.
+</p>
+
+<h2 id="oftc"><a href="http://www.oftc.net/">OFTC</a></h2>
+
+<p>
+The channel <irc_channel net="oftc" chan="vim" /> accepts beginner questions.
+</p>
+
+
