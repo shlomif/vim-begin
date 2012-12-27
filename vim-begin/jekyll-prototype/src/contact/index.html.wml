@@ -1,0 +1,17 @@
+---
+layout: default
+title: Contact Us
+---
+<h1>Contact Us</h1>
+
+<p>
+The chief webmaster of this site is
+<a href="http://www.shlomifish.org/">Shlomi Fish</a> and his
+<a href="http://www.shlomifish.org/me/contact-me/"><b>contact information</b>
+can be found on his home site</a>.
+</p>
+
+<p>
+Furthermore, the site has <a href="contribute">information for contributors</a>
+including an issue tracker (a.k.a “bug tracker”).
+</p>
