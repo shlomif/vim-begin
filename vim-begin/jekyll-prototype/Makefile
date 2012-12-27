@@ -1,5 +1,5 @@
 GENERATED_HTMLS = _site/index.html _site/books/index.html _site/mailing-lists/index.html
-GENERATED_CSS = _site/src/css/style.css
+GENERATED_CSS = src/css/style.css
 
 all: $(GENERATED_HTMLS) $(GENERATED_CSS)
 
