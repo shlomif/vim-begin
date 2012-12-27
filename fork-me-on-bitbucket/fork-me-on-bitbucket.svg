@@ -29,9 +29,9 @@
          offset="0.05"
          style="stop-color:#152e18;stop-opacity:1;" />
       <stop
-        id="stop3800"
-        offset="0.5"
-        style="stop-color:#00ff00;stop-opacity:1;" />
+         id="stop3800"
+         offset="0.5"
+         style="stop-color:#35c54d;stop-opacity:1;" />
       <stop
          style="stop-color:#152e18;stop-opacity:1;"
          offset="0.95"
@@ -59,8 +59,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="502.00482"
-     inkscape:cy="522.85714"
+     inkscape:cx="-10.852323"
+     inkscape:cy="525.71428"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -77,7 +77,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -86,7 +86,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="color:#000000;fill:url(#linearGradient3786);fill-opacity:1;stroke:#000000;stroke-width:0.42399999999999999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99547514000000004;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:url(#linearGradient3786);fill-opacity:1.0;stroke:#000000;stroke-width:0.42399999999999999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.99547514000000004;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3010"
        width="1065.7898"
        height="102.93271"
