@@ -9,7 +9,7 @@ $(GENERATED_HTMLS) : atom.xml CNAME _config.yml pgp.txt README.textile src/_layo
 $(GENERATED_CSS) : sass/jqui-override.sass sass/style.sass sass/print.sass sass/vim_syntax_highlighting.sass
 	compass compile
 	mkdir -p _site/css
-	cp -f src/*.css _site/css
+	cp -f src/css/*.css _site/css
 
 RSYNC = rsync --progress --verbose --rsh=ssh
 

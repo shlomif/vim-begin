@@ -330,3 +330,13 @@ table.wiki-content-table *, code, table.wiki-content-table tr td span.fixed, tab
 
 .todo
     display: none
+
+=rounded_corners($radius)
+    -webkit-border-radius: $radius
+    -moz-border-radius: $radius
+    border-radius: $radius
+
+.mswin_download_button
+    :background-color #5DEA17
+    :padding 1em
+    +rounded_corners(20px)
