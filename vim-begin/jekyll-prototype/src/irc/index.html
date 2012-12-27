@@ -60,29 +60,6 @@ List/Comparison of IRC Clients</a>
 
 </ul>
 
-<define-tag irc_channel whitespace="delete">
-<preserve net chan />
-<set-var %attributes />
-<:{
-    my $net = "<get-var net />";
-    my $chan = "<get-var chan />";
-    my %servers =
-    (
-        'freenode' => "irc.freenode.net",
-        'efnet' => "irc.Prison.NET",
-        'oftc' => "irc.oftc.net",
-        'undernet' => "us.undernet.org",
-        'ircnet' => "ircnet.demon.co.uk",
-    );
-    if (!exists($servers{$net}))
-    {
-        die "Unknown network!";
-    }
-    print "<a href=\"irc://" . $servers{$net} . "/%23$chan\"><tt>#$chan</tt></a>";
-}:>
-<restore net chan />
-</define-tag>
-
 <h2 id="freenode"><a href="http://freenode.net/">FreeNode</a></h2>
 
 <p>
@@ -91,13 +68,14 @@ technical matters in general.
 </p>
 
 <p>
-Check the channel <irc_channel chan="vim" net="freenode" />.
+Check the channel <a href="irc://irc.freenode.net/#vim">#vim</a>.
 </p>
 
 <h2 id="oftc"><a href="http://www.oftc.net/">OFTC</a></h2>
 
 <p>
-The channel <irc_channel net="oftc" chan="vim" /> accepts beginner questions.
+The channel <a href="irc://irc.oftc.net/#vim">#vim</a> accepts beginner
+questions.
 </p>
 
 
