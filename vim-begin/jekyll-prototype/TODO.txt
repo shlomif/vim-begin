@@ -1,6 +1,8 @@
 * Add ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf (see
 http://www.vim.org/docs.php ).
 
+* Add a page with screenshots.
+
 * Add http://vim.wikia.com/wiki/Vim_Tips_Wiki (note - very disorganised).
 
 * Add http://vimcasts.org/ .
