@@ -23,6 +23,8 @@
         - no saved games.
         - Levels beyond the third are not free.
 
+* http://vimcasts.org/
+
 * https://sites.google.com/site/oldwagner/home/vim-cheatsheet
 
 * https://sites.google.com/site/whatisvim/
