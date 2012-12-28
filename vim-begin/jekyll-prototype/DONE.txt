@@ -5,3 +5,7 @@ http://www.vim.org/docs.php ).
 
 * Link to : http://shop.oreilly.com/product/9780596529833.do
 
+* http://shlomif-tech.livejournal.com/tag/vim
+    - http://shlomif.livejournal.com/tag/vim
+
+
