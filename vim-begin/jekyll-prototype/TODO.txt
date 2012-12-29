@@ -2,10 +2,6 @@
 
 * Add the book covers to the books’s page.
 
-* Add http://vim.wikia.com/wiki/Vim_Tips_Wiki (note - very disorganised).
-
-* Add http://vimcasts.org/ .
-
 * http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
     - And especially: the first reply.
 

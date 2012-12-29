@@ -8,4 +8,8 @@ http://www.vim.org/docs.php ).
 * http://shlomif-tech.livejournal.com/tag/vim
     - http://shlomif.livejournal.com/tag/vim
 
+* Add http://vim.wikia.com/wiki/Vim_Tips_Wiki (note - very disorganised).
+
+* Add http://vimcasts.org/ .
+
 
