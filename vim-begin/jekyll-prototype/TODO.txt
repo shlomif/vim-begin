@@ -5,13 +5,6 @@
 * http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
     - And especially: the first reply.
 
-* http://www.moolenaar.net/habits.html
-    * http://www.youtube.com/watch?v=eX9m3g5J-XA
-
-* Golf:
-    - http://vimgolf.com/
-    - http://golf.shinh.org/
-
 * Link to Jekyll per request of the README.
 
 * Vim Adventures - http://vim-adventures.com/
