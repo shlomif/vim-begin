@@ -15,3 +15,7 @@
     * https://docs.google.com/spreadsheet/ccc?key=0AsVzyzwfTGNkdHZCaTNTVHUzNDVxV2E2OHJPTU1nYVE&hl=en#gid=8
 
 * http://code.google.com/p/vimcolorschemetest/
+
+* Learn Vim Scripts the Hard Way.
+
+* Add vimtutor.
