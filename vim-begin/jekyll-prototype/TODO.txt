@@ -7,11 +7,6 @@
 
 * Link to Jekyll per request of the README.
 
-* Vim Adventures - http://vim-adventures.com/
-    - issues with it:
-        - no saved games.
-        - Levels beyond the third are not free.
-
 * http://vimcasts.org/
 
 * https://sites.google.com/site/oldwagner/home/vim-cheatsheet

@@ -19,3 +19,8 @@ http://www.vim.org/docs.php ).
     - http://vimgolf.com/
     - http://golf.shinh.org/
 
+* Vim Adventures - http://vim-adventures.com/
+    - issues with it:
+        - no saved games.
+        - Levels beyond the third are not free.
+
