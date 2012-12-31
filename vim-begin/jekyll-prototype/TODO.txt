@@ -17,5 +17,6 @@
 * http://code.google.com/p/vimcolorschemetest/
 
 * Learn Vim Scripts the Hard Way.
+    - http://learnvimscriptthehardway.stevelosh.com/
 
 * Add vimtutor.
