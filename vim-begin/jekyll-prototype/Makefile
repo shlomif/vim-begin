@@ -22,4 +22,4 @@ $(GENERATED_CSS) : sass/jqui-override.sass sass/style.sass sass/print.sass sass/
 RSYNC = rsync --progress --verbose --rsh=ssh
 
 upload: all
-	$(RSYNC) -a ./_site/* hostgator:domains/vim.begin-site.org/
+	$(RSYNC) -a ./_site/* ./_site/.htaccess hostgator:domains/vim.begin-site.org/
