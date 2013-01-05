@@ -1,7 +1,7 @@
 * Add a page with screenshots.
     - add more screenshots.
 
-* Add the book covers to the books’s page.
+* Add the book covers to the books’ page.
 
 * http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim
     - And especially: the first reply.
