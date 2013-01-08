@@ -24,3 +24,31 @@
 
 * Mirror http://bilalquadri.com/blog/2012/12/17/getting-started-with-vim/
     (It is CC-by 3.0 Unported).
+
+* Add a section with pages about:
+    - Uses: using Vim for editing several types of grammar:
+        - See http://perl-begin.org/uses/
+        - XML / HTML / SGML / etc.
+        - Perl
+        - Python
+        - Ruby
+        - PHP
+            - etc.
+        - C
+        - Common Lisp / Scheme / Racket / Clojur / etc.
+        - Java
+        - C++
+        - etc.
+    - Topics
+        - See http://perl-begin.org/topics/ .
+        - registers
+        - movements
+            - diw , di{ , daw , da{
+            - v / V / Ctrl+V
+        - marks
+        - managing plugins
+            - VAM / Pathogen / etc.
+        - vim script and other automation.
+            - register repeats.
+            - maps
+        - .vimrc / modelines / per project stuff.
