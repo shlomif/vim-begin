@@ -24,3 +24,6 @@ http://www.vim.org/docs.php ).
         - no saved games.
         - Levels beyond the third are not free.
 
+* Learn Vim Scripts the Hard Way.
+    - http://learnvimscriptthehardway.stevelosh.com/
+
