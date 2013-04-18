@@ -23,7 +23,7 @@ Translating its content to other languages.
 
 <li>
 <p>
-Cloning the repository’s <a href="source/">source</a> and sending pull
+Cloning the repository’s <a href="[% base_path %]source/">source</a> and sending pull
 requests (or less preferably patches).
 </p>
 </li>

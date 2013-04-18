@@ -10,7 +10,7 @@ can be found on his home site</a>.
 </p>
 
 <p>
-Furthermore, the site has <a href="contribute">information for contributors</a>
+Furthermore, the site has <a href="[% base_path %]contribute">information for contributors</a>
 including an issue tracker (a.k.a “bug tracker”).
 </p>
 

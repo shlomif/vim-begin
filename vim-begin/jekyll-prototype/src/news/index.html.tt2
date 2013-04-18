@@ -14,7 +14,7 @@ for learning about <a href="http://www.vim.org/">the Vim text editor</a>.
 Currently, the pages of the site are incomplete and there are many broken
 internal links, but we hope to fix most of the low-hanging fruit in the next
 few days. That put aside, one can help us by
-<a href="contribute/">contributing</a>.
+<a href="[% base_path %]contribute/">contributing</a>.
 </p>
 
 <p>
