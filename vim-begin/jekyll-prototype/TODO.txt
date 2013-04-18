@@ -1,4 +1,4 @@
-* Add a page with screenshots.
+* Screenshots' page
     - add more screenshots.
 
 * Add the book covers to the books’ page.
