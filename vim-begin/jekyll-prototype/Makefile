@@ -1,6 +1,8 @@
 # GENERATED_HTMLS = _site/index.html _site/books/index.html _site/mailing-lists/index.html
 D = dest
 
+include include.mak
+
 SOURCES = $(shell find src -name '*.html') _config.yml atom.xml CNAME README.textile
 GENERATED_HTMLS = $(shell find _site -name '*.html')
 GENERATED_CSS = src/css/style.css
@@ -19,7 +21,7 @@ UPLOAD_URL = hostgator:domains/vim.begin-site.org/
 
 all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 
-$(DESTS): $(D)/%.html: src/%.html.tt2 footer.tt2 blocks.tt2
+$(DEST_HTMLS): $(SRC_TT2S) footer.tt2 blocks.tt2
 	perl process.pl
 
 $(HTACCESS_DEST): htaccess.conf

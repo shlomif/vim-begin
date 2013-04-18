@@ -1,0 +1,7 @@
+#!/bin/bash
+(
+echo "SRC_TT2S = $(find src -name '*.html.tt2' | (LC_ALL=C sort) | perl -lape 's/$/ \\/')"
+echo
+echo "DEST_HTMLS = $(find dest -name '*.html' | (LC_ALL=C sort) | perl -lape 's/$/ \\/')"
+echo
+) > include.mak
