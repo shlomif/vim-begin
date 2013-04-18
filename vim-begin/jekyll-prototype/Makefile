@@ -8,14 +8,14 @@ GENERATED_CSS = src/css/style.css
 SCREENSHOTS_PNGS = src/screenshots/images/romainl-macvim1.png src/screenshots/images/romainl-macvim2.png src/screenshots/images/gvim-perl-256.png
 SCREENSHOTS_PNGS_PREVIEWS = $(patsubst %.png,%-preview.png,$(SCREENSHOTS_PNGS))
 
-RSYNC = rsync --progress --verbose --rsh=ssh
+RSYNC = rsync --progress --verbose --rsh=ssh -a
 
 RSYNC_EXTRA_OPTS =
 
 DESTS = $(D)/index.html
 HTACCESS_DEST = $(D)/.htaccess
 
-UPLOAD_URL = hostgator:public_html/temp-www.linux.org.il-new-site/
+UPLOAD_URL = hostgator:domains/vim.begin-site.org/
 
 all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 

@@ -23,6 +23,3 @@ Perl programming language.
 </p>
 
 [% PROCESS "footer.tt2" %]
-
-</body>
-</html>
