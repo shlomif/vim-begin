@@ -1,0 +1,75 @@
+<p class="share_this">
+<a href="http://www.addtoany.com/share_save"><img src="http://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" class="bless" alt="Share/Bookmark" /></a>
+</p>
+
+</div>
+
+<h3 class="hide">Sidebar</h3>
+<div id="right-sidebar">
+<div class="testimonials">
+<h2>Testimonials</h2>
+<b>TODO : Add more</b>
+<p>
+<a href="learn/who-is-using/">More…</a>
+</p>
+</div>
+<div class="news-box">
+<h2><a href="news/">News</a></h2>
+<ul>
+<li>
+<a href="news/">More news…</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- FOOTER -->
+<h3 class="hide">Footer</h3>
+<div id="footer">
+<!-- Creative Commons License -->
+Unless noted otherwise, the Vim Beginners’s Site is <b>licensed</b> under
+the <a rel="license"
+href="http://creativecommons.org/licenses/by/3.0/">Creative Commons
+Attribution 3.0 Unported License</a> (or at your option any later
+version).<br />
+<!-- /Creative Commons License -->
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+<dc:title>Better SCM Site Contents</dc:title>
+<dc:date>2004</dc:date>
+<dc:description>A Version Control Systems Information and Advocacy carrying site</dc:description>
+<dc:creator><Agent>
+  <dc:title>Shlomi Fish</dc:title>
+</Agent></dc:creator>
+<dc:rights><Agent>
+  <dc:title>Shlomi Fish</dc:title>
+</Agent></dc:rights>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+<license rdf:resource="http://creativecommons.org/licenses/by/2.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by/2.0/">
+<permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+<permits rdf:resource="http://web.resource.org/cc/Distribution" />
+<requires rdf:resource="http://web.resource.org/cc/Notice" />
+<requires rdf:resource="http://web.resource.org/cc/Attribution" />
+<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+</License>
+</rdf:RDF>
+-->
+<b>Webmaster:</b> <a href="http://www.shlomifish.org/">Shlomi Fish</a> (<a href="mailto:shlomif@shlomifish.org">Email - shlomif@shlomifish.org</a>)<br />
+<b>Original Design:</b> <a href="http://www.oswd.org/design/preview/id/2933">GoFlexiblePro</a>
+| Author: <a href="mailto:gw@actamail.com">G. Wolfgang</a>
+| <a href="http://validator.w3.org/check?uri=referer" title="Validate code as W3C XHTML 1.1 Strict Compliant">W3C XHTML 5</a>
+| <a href="http://jigsaw.w3.org/css-validator/" title="Validate Style Sheet as W3C CSS 3.0 Compliant">W3C CSS 3.0</a>
+<br />
+<b>Hosted by:</b> <a href="http://hexten.net/">Hexten.net</a>.
+<script type="text/javascript" src="js/selfl.js"></script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+[%- BLOCK block_before -%]
+<table border="0" class="wrap" summary="wrapper table">
+<tr>
+<td>
+[%- END -%]
+
+[%- BLOCK block_after -%]
+</td>
+</tr>
+</table>
+[%- END -%]
+
+[%- BLOCK link_to_top -%]
+<p class="to_top"><a href="http://mikmod.shlomifish.org/">Back to the MikMod Homepage</a></p>
+[%- END -%]
+
+[%- BLOCK start_html -%]
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-GB" lang="en-GB">
+<head>
+   <title>[% title %] (Vim Beginners’ Site)</title>
+   <meta charset="UTF-8" />
+   <base href="http://vim.begin-site.org/" />
+   <meta name="author" content="Shlomi Fish" />
+   <link href="http://feeds.feedburner.com/tom-preston-werner" rel="alternate" title="Tom Preston-Werner" type="application/atom+xml" />
+
+   <!-- syntax highlighting CSS -->
+   <link rel="stylesheet" href="css/syntax.css" type="text/css" />
+
+   <!-- Homepage CSS -->
+   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection" />
+
+   <!-- Print CSS -->
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+<script type="text/javascript" src="js/jq.js"></script>
+<script type="text/javascript" src="js/position_divs.js"></script>
+<!-- Typekit -->
+</head>
+<body>
+
+<a href="http://bitbucket.org/shlomif/vim-begin"><img src="images/fork-me-on-bitbucket.png" class="fork_me" alt="Fork me on BitBucket" /></a>
+
+<!-- HEADER -->
+<!-- Global Navigation -->
+<div id='header'>
+<!-- Sitename and Banner -->
+<div class="site-name" id="js-site-name">
+<h1><a href="">Vim Beginners' Site</a></h1>
+</div>
+<div class="site-slogan" id="js-site-slogan">
+Vim - type less ; edit more.
+</div>
+</div>
+
+<div id="page-container">
+
+<div class="nav-main">
+<h3 class="hide">Breadcrumbs Trail</h3>
+<p class="breadcrumbs">
+<a href="">Vim Beginner’s Site</a>
+→
+<a class="extra" href="">Home</a>
+</p>
+
+<h3 class="hide">Global Navigation</h3>
+
+<ul class="about-links">
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="contact/">Contact</a></li>
+
+</ul>
+
+</div>
+
+<h3 class="hide">Main Navigation</h3>
+<div id="left-sidebar">
+
+<a href=""><img class="logo" src="images/vim-begin.png"
+    alt="Vim Begin Logo" /></a>
+
+<div id="main_nav_menu">
+<ul class="navbarmain">
+<li>
+<a href="">Home</a>
+</li>
+<li>
+<a href="about.html">About</a>
+</li>
+<li>
+<a href="news/" title="Previous News Item">News</a>
+</li>
+<li>
+<a href="screenshots/" title="Screenshots of Vim in Action">Screenshots</a>
+</li>
+<li>
+<a href="links/" title="External Links to Other Resources">Links</a>
+</li>
+<li>
+<a href="humour/" title="Vim Humour and Links to Vim Humour resources">Vim Humour</a>
+</li>
+</ul>
+<h2>
+<a href="learn/" title="Why and how to learn Vim?">Learn Vim Now</a>
+</h2>
+<h2>
+<a href="resources/" title="Links to Online and Offline Resources for Learning Vim">Resources</a>
+</h2>
+<ul class="navbarnested">
+<li>
+<a href="tutorials/">Online Tutorials</a>
+</li>
+<li>
+<a href="books/">Books</a>
+</li>
+<li>
+<a href="core-doc/">Core Docs</a>
+</li>
+<li>
+<a href="articles/">Article Collections</a>
+</li>
+<li>
+<a href="training/" title="Take paid courses for learning Vim">Training</a>
+</li>
+<li>
+<a href="FAQs/" title="Lists of Frequently Asked Questions with Answers">FAQs</a>
+</li>
+<li>
+<a href="exercises/" title="Links to Exercises and Challenges for Practice">Exercises and Challenges</a>
+</li>
+<li>
+<a href="games/" title="Games you can play in order to learn Vim">Games</a>
+</li>
+</ul>
+<ul class="navbarmain">
+<li>
+<a href="mailing-lists/" title="Ask questions and receive answers about Vim by E-mail">Mailing Lists</a>
+</li>
+<li>
+<a href="web-forums/" title="Ask questions and receive answers by using a web-browser">Web Forums</a>
+</li>
+<li>
+<a href="irc/" title="Chat online about Vim using the Internet Relay Chat (IRC)">IRC Channels</a>
+</li>
+</ul>
+<ul class="navbarmain">
+<li>
+<a href="reference-resources/" title="Resources for reference about Vim and looking up information.">Reference Resources</a>
+</li>
+<li>
+<a href="wikis/" title="Publicly editable sites with Lots of Useful Information">Wikis</a>
+</li>
+<li>
+<a href="blogs/" title="Links to some Vim-related Blogs (a.k.a &quot;Weblogs&quot; or online journals)">Blogs</a>
+</li>
+</ul>
+<h2>
+<a href="platforms/">Platforms</a>
+</h2>
+<h2>
+<a href="contribute/" title="Contribute new content or corrections to this site">Contribute</a>
+</h2>
+<ul class="navbarmain">
+<li>
+<a href="contribute/list/">Contributors List</a>
+</li>
+<li>
+<a href="source/">Site’s Source Code</a>
+</li>
+</ul>
+
+</div>
+
+
+</div>
+
+<h3 class="hide">Content</h3>
+<div id="content">
+
+<h1>[% title %]</h1>
+
+[%- END -%]
+
+[%-# vim:ft=tt2html:
+-%]
