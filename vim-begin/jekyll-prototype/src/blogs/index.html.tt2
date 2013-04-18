@@ -1,0 +1,40 @@
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim Blogs' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
+<h2 id="daily_vim"><a href="http://dailyvim.blogspot.com/">Daily Vim</a></h2>
+
+<p>
+“Text Editor Tips, Tricks, Tutorials and HOWTOs”.
+</p>
+
+<h2 id="vimcasts"><a href="http://vimcasts.org/">Vimcasts</a></h2>
+
+<p>
+Free screencasts about the Vim text editor.
+</p>
+
+<h2 id="of_vim_and_vigor"><a href="http://of-vim-and-vigor.blogspot.com/">Of Vim and Vigor</a></h2>
+
+<p>
+A tech blog mostly about Vim.
+</p>
+
+<h2 id="shlomif_vim_tips">Vim Tips Column in Shlomi Fish’s Weblog</h2>
+
+<p>
+On <a href="http://shlomif-tech.livejournal.com/tag/vim">his tech weblog</a>
+and an older one on his <a href="http://shlomif.livejournal.com/tag/vim">main
+blog</a>.
+</p>
+
+<h2>Microblogs (Twitter, Identi.ca, etc.)</h2>
+
+<h3><a href="http://twitter.com/be_vimmer_en">be_vimmer_en</a></h3>
+
+<p>
+<q>Tweets Vim commands every 3 hours. Let's be a good Vimmer!</q>
+</p>
+
+
+[% PROCESS "footer.tt2" %]

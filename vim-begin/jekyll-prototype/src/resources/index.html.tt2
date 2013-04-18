@@ -1,0 +1,132 @@
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Resources for Learning about Vim.' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
+<h2 id="what_to_learn_from">From what to Learn?</h2>
+
+<dl>
+
+<dt id="tutorials">
+<a href="tutorials/">Tutorials</a>
+</dt>
+<dd>
+A list of recommended online tutorials for learning Vim and getting up to
+speed with it. Normally they don't teach everything you can possibly know,
+but they should be OK to start with if you're impatient.
+</dd>
+
+<dt id="books">
+<a href="books/">Books</a>
+</dt>
+<dd>
+A list of online and offline (or otherwise books that require pay to
+view online or download), for learning Vim.
+</dd>
+
+<dt id="core_doc">
+<a href="core-doc/">Core Documentation</a>
+</dt>
+<dd>
+The core documentation of Vim.
+</dd>
+
+<dt id="article_collections">
+<a href="articles/">Article Collections</a>
+</dt>
+<dd>
+Collections of short, in-depth articles.
+</dd>
+
+<dt id="training">
+<a href="training/">Training</a>
+</dt>
+<dd>
+Take courses for learning Vim.
+</dd>
+
+<dt id="exercises">
+<a href="exercises/">Exercises and Challenges</a>
+</dt>
+<dd>
+Collections of exercises and challenges to be solved.
+Learn Vim hands-on.
+</dd>
+
+<dt id="games">
+<a href="games/">Exercises and Challenges</a>
+</dt>
+<dd>
+Vim Games and Recreations.
+</dd>
+</dl>
+
+<h2 id="get_help">How to Get Help?</h2>
+
+<p>
+Suppose you've read one of the resources above and ran into a problem. Now
+what should you do?
+</p>
+
+<dl>
+
+<dt id="irc"><a href="irc/">IRC (Internet Relay Chat)</a></dt>
+
+<dd>
+Internet Relay Chat is probably the fastest way to receive answers to most
+common beginner questions. Please visit <a href="irc/">the link</a> to
+learn more about it, and see where it is best to ask, what to avoid doing and
+what to expect.
+</dd>
+
+<dt id="mailing-lists"><a href="mailing-lists/">Mailing Lists</a></dt>
+
+<dd>
+Mailing lists allow you to ask questions by E-mail and also learn from
+similar discussions. They are the best solution for more obscure questions,
+or if you're not short on time and want less interactive, but more in-depth
+discussions.
+</dd>
+
+<dt id="web-forums"><a href="web-forums/">Web Forums</a></dt>
+
+<dd>
+Web forums are similar to mailing lists, but all interaction is done through
+a web-browser, and one can use
+<a href="http://en.wikipedia.org/wiki/Web_feed">web feeds</a> to monitor them.
+We have concentrated a selection of Vim-related web forums on
+<a href="web-forums/">the Web Forums page</a>.
+</dd>
+
+</dl>
+
+<h2 id="reading_resources">Resources for Reference and Enlightenment</h2>
+
+<dl>
+
+<dt id="general_reference_resources"><a href="reference-resources/">General
+Reference Resources</a></dt>
+
+<dd>
+Reference resources that did not fit elsewhere, including those from the
+core Perl 5 documentation.
+</dd>
+
+<dt id="wikis"><a href="wikis/">Wikis</a></dt>
+
+<dd>
+Wikis are dynamically editable web-sites that allow for collaborative editing
+of useful information. Vim has several wikis with active contributors, that
+help write useful knowledge.
+</dd>
+
+<dt id="blogs"><a href="blogs/">Blogs</a></dt>
+
+<dd>
+Blogs, Weblogs or Online Journals where people write about Vim.
+</dd>
+
+</dl>
+
+
+
+[% PROCESS "footer.tt2" %]

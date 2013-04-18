@@ -1,0 +1,8 @@
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim Humour' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
+<h2 id="vi_humour"><a href="http://www.texteditors.org/cgi-bin/wiki.pl?ViHumor">Vi Humor</a> on the Text Editors Wiki</h2>
+
+
+[% PROCESS "footer.tt2" %]

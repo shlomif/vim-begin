@@ -1,0 +1,41 @@
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim Mailing Lists' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
+<div id="home">
+
+
+<h2 id="overview">Overview</h2>
+
+<p>
+An <a href="http://en.wikipedia.org/wiki/Electronic_mailing_list">electronic
+mailing list</a> is a way to send E-mail messages to several people using
+a single, convenient E-mail address. One can subscribe to a mailing list to
+receive messages that the other people have sent. More information can be
+found in <a href="http://en.wikipedia.org/wiki/Electronic_mailing_list">the
+wikipedia page</a>.
+</p>
+
+<p>
+Some people on local Free and Open Source Software User Groups (such as
+the so-called Linux User Groups) may be able to help you with Vim, but
+there are also some dedicated international mailing lists for it.
+</p>
+
+<h2 id="intro">Introduction</h2>
+
+<p>
+Mailing lists
+</p>
+<h2 id="vim_use"><a href="https://groups.google.com/forum/?fromgroups#!forum/vim_use">The Vim Users Mailing List</a></h2>
+
+<p>
+The official mailing list for Vim questions on Google Groups (page requires
+JavaScript to be enabled). Moderately high volume, but one can subscribe
+and so be able to post messages without receiving most incoming E-mail.
+</p>
+
+</div>
+
+
+[% PROCESS "footer.tt2" %]

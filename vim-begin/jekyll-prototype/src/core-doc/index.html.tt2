@@ -1,0 +1,15 @@
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Core Documentation' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
+<h2 id="core_doc"><a href="http://vimdoc.sourceforge.net/">Vim Core Documentation</a></h2>
+
+<p>
+The Vim core documentation can be read online or using Vim by typing
+<kbd>:help</kbd> and later on <kbd>Ctrl+]</kbd> to access
+a hyperlink and <kbd>Ctrl+T</kbd> to return to the position before the last
+link.
+</p>
+
+
+[% PROCESS "footer.tt2" %]
