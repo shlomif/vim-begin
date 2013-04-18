@@ -1,8 +1,7 @@
----
-layout: default
-title: Getting Started With Vim by Bilal Quadri
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Getting Started With Vim by Bilal Quadri' -%]
+[%- SET base_path = '../../' -%]
+[%- PROCESS start_html -%]
 <h2>Note</h2>
 
 <p>
@@ -246,3 +245,6 @@ for actual experience though.</p>
 <!---->
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
 </footer>
+
+
+[% PROCESS "footer.tt2" %]

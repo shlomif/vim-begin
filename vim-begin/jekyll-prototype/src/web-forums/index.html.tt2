@@ -1,9 +1,7 @@
----
-layout: default
-title: Web Forums
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Web Forums' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="stackoverflow"><a href="http://stackoverflow.com/">Stack Overflow</a></h2>
 
 <p>
@@ -14,3 +12,6 @@ people's questions. There's an active
 category</a> there.
 </p>
 
+
+
+[% PROCESS "footer.tt2" %]

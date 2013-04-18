@@ -1,9 +1,7 @@
----
-layout: default
-title: Learn Vim Now!
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Learn Vim Now!' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="why_learn">Why Learn Vim?</h2>
 
 <p>
@@ -84,3 +82,6 @@ and supporters.
 <p>
 See <a href="resources/">our resources page</a> for some options.
 </p>
+
+
+[% PROCESS "footer.tt2" %]

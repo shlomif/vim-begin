@@ -1,8 +1,7 @@
----
-layout: default
-title: Vim Mailing Lists
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim Mailing Lists' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <div id="home">
 
 
@@ -37,3 +36,6 @@ and so be able to post messages without receiving most incoming E-mail.
 </p>
 
 </div>
+
+
+[% PROCESS "footer.tt2" %]

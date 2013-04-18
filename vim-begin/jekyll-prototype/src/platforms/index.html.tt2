@@ -1,9 +1,7 @@
----
-layout: default
-title: Vim on Various Platforms and Operating Systems
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim on Various Platforms and Operating Systems' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="note">Note</h2>
 
 <p>
@@ -68,3 +66,6 @@ On <strong>Arch Linux</strong>, type <kbd>sudo pacman -Syu gvim</kbd>
 </li>
 
 </ul>
+
+
+[% PROCESS "footer.tt2" %]

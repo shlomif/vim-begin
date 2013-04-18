@@ -1,9 +1,7 @@
----
-layout: default
-title: Collections of Articles
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Collections of Articles' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="seven_habits"><a href="http://www.moolenaar.net/habits.html">“Seven habits of effective text editing”</a></h2>
 
 <p>
@@ -13,3 +11,6 @@ By Bram Moolenaar, the creator of Vim.
 <div class="sub_section">
 <h3><a href="http://www.youtube.com/watch?v=eX9m3g5J-XA">Google Tech Talk by Bram</a></h3>
 </div>
+
+
+[% PROCESS "footer.tt2" %]

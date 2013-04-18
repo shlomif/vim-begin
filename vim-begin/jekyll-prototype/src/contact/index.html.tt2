@@ -1,8 +1,7 @@
----
-layout: default
-title: Contact Us
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Contact Us' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <p>
 The chief webmaster of this site is
 <a href="http://www.shlomifish.org/">Shlomi Fish</a> and his
@@ -14,3 +13,6 @@ can be found on his home site</a>.
 Furthermore, the site has <a href="contribute">information for contributors</a>
 including an issue tracker (a.k.a “bug tracker”).
 </p>
+
+
+[% PROCESS "footer.tt2" %]

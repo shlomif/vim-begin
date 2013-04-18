@@ -1,8 +1,7 @@
----
-layout: default
-title: Contribute to Vim-Begin
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Contribute to Vim-Begin' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <p>
 You can contribute to Vim-Begin by:
 </p>
@@ -29,3 +28,6 @@ requests (or less preferably patches).
 </p>
 </li>
 </ol>
+
+
+[% PROCESS "footer.tt2" %]

@@ -1,9 +1,7 @@
----
-layout: default
-title: Vim Frequently Asked Questions Lists ( FAQs )
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim Frequently Asked Questions Lists ( FAQs )' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="vim_faq"><a href="https://github.com/chrisbra/vim_faq">The
 Vim FAQ</a></h2>
 
@@ -11,3 +9,6 @@ Vim FAQ</a></h2>
 An up-to-date version of the Vim Frequently Asked Questions List (FAQ)
 which provides a lot of enlightenment.
 </p>
+
+
+[% PROCESS "footer.tt2" %]

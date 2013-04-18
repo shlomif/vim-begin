@@ -1,9 +1,7 @@
----
-layout: default
-title: Links
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Links' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <ul>
 
 <li>
@@ -84,3 +82,6 @@ The BEST HTML EDITOR</a> - the only editor that is better than Vim. ;-).
 </li>
 
 </ul>
+
+
+[% PROCESS "footer.tt2" %]

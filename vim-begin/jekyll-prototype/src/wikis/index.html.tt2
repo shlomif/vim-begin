@@ -1,11 +1,12 @@
----
-layout: default
-title: Vim-related Wikis
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim-related Wikis' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="vim_wikia"><a href="http://vim.wikia.com/">The Vim Tips Wiki</a></h2>
 
 <p>
 A wiki for Vim tips and other Vim-related data. Somewhat disorganised.
 </p>
+
+
+[% PROCESS "footer.tt2" %]

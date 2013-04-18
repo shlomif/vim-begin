@@ -1,8 +1,7 @@
----
-layout: default
-title: Recommended Tutorials
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Recommended Tutorials' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="getting_started_with_vim"><a href="http://bilalquadri.com/blog/2012/12/17/getting-started-with-vim/">Getting Started with Vim</a></h2>
 
 <p>
@@ -18,3 +17,6 @@ or on Vim by typing <kbd>:help</kbd> and later on <kbd>Ctrl+]</kbd> to access
 a hyperlink and <kbd>Ctrl+T</kbd> to return to the position before the last
 link.
 </p>
+
+
+[% PROCESS "footer.tt2" %]

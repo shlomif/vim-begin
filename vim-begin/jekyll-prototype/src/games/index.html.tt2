@@ -1,9 +1,7 @@
----
-layout: default
-title: Games that Teach Vim
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Games that Teach Vim' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="vim_adventures"><a href="http://vim-adventures.com/">Vim
 Adventures</a></h2>
 
@@ -12,3 +10,6 @@ A JavaScript (so-called “HTML 5”) game that teaches Vim basics.
 Attractive graphics, and an intresting concept, but lacks a saved game
 feature, and the levels above the third require payment.
 </p>
+
+
+[% PROCESS "footer.tt2" %]

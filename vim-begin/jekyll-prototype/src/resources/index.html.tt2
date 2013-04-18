@@ -1,9 +1,7 @@
----
-layout: default
-title: Resources for Learning about Vim.
----
-
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Resources for Learning about Vim.' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <h2 id="what_to_learn_from">From what to Learn?</h2>
 
 <dl>
@@ -129,3 +127,6 @@ Blogs, Weblogs or Online Journals where people write about Vim.
 
 </dl>
 
+
+
+[% PROCESS "footer.tt2" %]

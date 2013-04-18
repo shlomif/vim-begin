@@ -1,8 +1,7 @@
----
-layout: default
-title: Vim Screenshots
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Vim Screenshots' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <a href="screenshots/images/gvim-perl-256.png"><img
     src="screenshots/images/gvim-perl-256-preview.png"
     alt="GVim Editing some perl code preview" /></a>
@@ -27,3 +26,6 @@ MacVim editing Vimscript with a vertical split
 MacVim editing JavaScript code with the
 <a href="https://github.com/kien/ctrlp.vim">CtrlP</a> plug-in.
 </p>
+
+
+[% PROCESS "footer.tt2" %]

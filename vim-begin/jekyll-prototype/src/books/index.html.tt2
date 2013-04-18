@@ -1,8 +1,7 @@
----
-layout: default
-title: Recommended Books for Learning Vim
----
-
+[%- PROCESS "blocks.tt2" -%]
+[%- SET title = 'Recommended Books for Learning Vim' -%]
+[%- SET base_path = '../' -%]
+[%- PROCESS start_html -%]
 <div id="home">
 
 
@@ -39,3 +38,6 @@ vi, with a focus on Vim.
 </p>
 
 </div>
+
+
+[% PROCESS "footer.tt2" %]
