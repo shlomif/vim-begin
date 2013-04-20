@@ -4,9 +4,9 @@
 
 =head2 Text
 
-The code of this site is MIT Licensed, while the text is mostly under Creative
-Commons Attribution 3.0, or later - CC-by. Feel free to use the HTML and CSS
-as you please.
+The code of this site is MIT/X11 Licensed, while the text is mostly under
+Creative Commons Attribution 3.0, or later - CC-by. Feel free to use the HTML
+and CSS as you please.
 
 Links:
 
@@ -16,7 +16,7 @@ Links:
 
 L<http://creativecommons.org/licenses/by/3.0/>
 
-=item * MIT License
+=item * MIT/X11 License
 
 L<http://en.wikipedia.org/wiki/MIT_License>
 
