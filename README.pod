@@ -1,0 +1,21 @@
+=encoding utf8
+
+=head1 The Vim Beginners’s Site
+
+=head2 About
+
+This repository contains the sources for the Vim Beginners’ Site:
+L<http://vim.begin-site.org/> .
+
+=head2 Links
+
+=over 4
+
+=item * Homepage
+
+L<http://vim.begin-site.org/>
+
+=back
+
+=cut
+
