@@ -1,0 +1,65 @@
+This document aims to see how Vim's ":!..." handles special characters and
+quoting. Our shell is bash on GNU/Linux.
+
+.!echo foo
+
+Gives:
+
+«
+foo
+»
+
+.!echo 'foobar'
+
+Gives:
+
+«
+foobar
+»
+
+So “'” (single-quote) doesn't have to be escaped.
+
+.!echo \'
+
+Gives:
+
+«
+'
+»
+
+.!echo \\Foo\\
+
+Gives:
+
+«
+\Foo\
+»
+
+.!perl -E 'say qq(Foo\x{20}Bar)'
+
+Gives:
+
+«
+Foo Bar
+»
+
+So “\” (Backslash) need not be escaped.
+
+.!echo %
+
+Gives:
+
+«
+understanding-exclamation-mark-shell-exec--escaping-rules.txt
+»
+
+.!echo \%
+
+Gives
+
+«
+%
+»
+
+So “%” (percent-sign) should be escaped as \%.
+
