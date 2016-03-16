@@ -63,3 +63,13 @@ Gives
 
 So “%” (percent-sign) should be escaped as \%.
 
+.!echo "My name is \"Spartacus\"."
+
+Gives:
+
+«
+My name is "Spartacus".
+»
+
+So “.” (dot/period/full-stop) and “"” (double-quotes) need not be escaped.
+
