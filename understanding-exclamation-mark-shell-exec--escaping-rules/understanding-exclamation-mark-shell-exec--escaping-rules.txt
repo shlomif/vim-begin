@@ -98,5 +98,5 @@ One#Two#Three
 »
 
 So “#” (hash sign/pound sign/sharp/octothrope/etc.) should be escaped with
-backslash.
+a backslash.
 
