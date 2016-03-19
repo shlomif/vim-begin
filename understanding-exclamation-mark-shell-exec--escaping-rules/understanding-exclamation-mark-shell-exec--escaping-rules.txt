@@ -1,5 +1,7 @@
-This document aims to see how Vim's ":!..." handles special characters and
+This document aims to see how Vim’s “:!...” handles special characters and
 quoting. Our shell is bash on GNU/Linux.
+
+------------------------------------------------------------------------
 
 .!echo foo
 
@@ -18,6 +20,8 @@ foobar
 »
 
 So “'” (single-quote) doesn't have to be escaped.
+
+------------------------------------------------------------------------
 
 .!echo \'
 
@@ -45,6 +49,8 @@ Foo Bar
 
 So “\” (Backslash) need not be escaped.
 
+------------------------------------------------------------------------
+
 .!echo %
 
 Gives:
@@ -63,6 +69,8 @@ Gives
 
 So “%” (percent-sign) should be escaped as \%.
 
+------------------------------------------------------------------------
+
 .!echo "My name is \"Spartacus\"."
 
 Gives:
@@ -72,4 +80,23 @@ My name is "Spartacus".
 »
 
 So “.” (dot/period/full-stop) and “"” (double-quotes) need not be escaped.
+
+------------------------------------------------------------------------
+
+.!echo "One#Two#Three"
+
+Gives:
+
+«
+[an error!]
+»
+
+.!echo "One\#Two\#Three"
+
+«
+One#Two#Three
+»
+
+So “#” (hash sign/pound sign/sharp/octothrope/etc.) should be escaped with
+backslash.
 
