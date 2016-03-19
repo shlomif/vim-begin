@@ -100,3 +100,23 @@ One#Two#Three
 So “#” (hash sign/pound sign/sharp/octothrope/etc.) should be escaped with
 a backslash.
 
+------------------------------------------------------------------------
+
+.!echo '!'
+
+Gives:
+
+«
+[error: no previous command]
+»
+
+.!echo '\!'
+
+Gives
+
+«
+!
+»
+
+So “!” (exclamation mark/bang/etc.) should be escaped with a backslash.
+
