@@ -182,3 +182,38 @@ So “&” (ampersand) should not be escaped with a backslash.
 
 ------------------------------------------------------------------------
 
+.!echo '*'
+
+Gives:
+
+«
+*
+»
+
+So “*” (asterisk/star) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '('
+
+Gives:
+
+«
+(
+»
+
+So “(” (left parenthesis/opening parenthesis/left round bracket) should not be
+escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo ')'
+
+Gives:
+
+«
+)
+»
+
+So “)” (right parenthesis/closing parenthesis/right round bracket) should not be
+escaped with a backslash.
