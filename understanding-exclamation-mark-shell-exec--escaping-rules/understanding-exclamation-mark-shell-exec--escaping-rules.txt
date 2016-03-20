@@ -194,7 +194,7 @@ So “*” (asterisk/star) should not be escaped with a backslash.
 
 ------------------------------------------------------------------------
 
-.!echo '('
+.!echo '{'
 
 Gives:
 
@@ -217,3 +217,52 @@ Gives:
 
 So “)” (right parenthesis/closing parenthesis/right round bracket) should not be
 escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '['
+
+Gives:
+
+«
+[
+»
+
+So “[” (left square bracket) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo ']'
+
+Gives:
+
+«
+]
+»
+
+So “]” (right square bracket) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '{'
+
+Gives:
+
+«
+{
+»
+
+So “{” (left curly brace) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '}'
+
+Gives:
+
+«
+}
+»
+
+So “}” (right curly brace) should not be escaped with a backslash.
+
