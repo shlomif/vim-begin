@@ -144,3 +144,41 @@ Gives:
 
 So “:” (colon) should not be escaped with a backslash.
 
+------------------------------------------------------------------------
+
+.!echo '$'
+
+Gives:
+
+«
+$
+»
+
+So “$” (dollar-sign) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '^'
+
+Gives:
+
+«
+^
+»
+
+So “^” (caret) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '&'
+
+Gives:
+
+«
+&
+»
+
+So “&” (ampersand) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
