@@ -310,3 +310,23 @@ Gives:
 
 So “`” (backtick) need not be escaped.
 
+------------------------------------------------------------------------
+
+.!echo '~'
+
+Gives:
+
+«
+~
+»
+
+.!ls -d ~
+
+Gives:
+
+«
+/home/shlomif
+»
+
+So “~” (tilde/wave) need not be escaped.
+
