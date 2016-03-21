@@ -289,3 +289,24 @@ Gives:
 »
 
 So “=” (equal sign) need not be escaped.
+
+------------------------------------------------------------------------
+
+.!echo `echo hello`
+
+Gives:
+
+«
+hello
+»
+
+.!echo '`'
+
+Gives:
+
+«
+`
+»
+
+So “`” (backtick) need not be escaped.
+
