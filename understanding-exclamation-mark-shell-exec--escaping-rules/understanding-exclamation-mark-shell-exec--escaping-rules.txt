@@ -330,3 +330,15 @@ Gives:
 
 So “~” (tilde/wave) need not be escaped.
 
+------------------------------------------------------------------------
+
+.!echo '+'
+
+Gives:
+
+«
++
+»
+
+So “+” (plus sign) need not be escaped.
+
