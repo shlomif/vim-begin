@@ -134,6 +134,18 @@ So “@” (at-sign) should not be escaped with a backslash.
 
 ------------------------------------------------------------------------
 
+.!echo ','
+
+Gives:
+
+«
+,
+»
+
+So “,” (comma) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
 .!echo ':'
 
 Gives:
@@ -265,6 +277,31 @@ So “]” (right square bracket) should not be escaped with a backslash.
 
 ------------------------------------------------------------------------
 
+.!echo '<'
+
+Gives:
+
+«
+<
+»
+
+So “<” (less-than/left angle bracket) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
+.!echo '>'
+
+Gives:
+
+«
+>
+»
+
+So “>” (greater-than/right angle bracket) should not be escaped with a
+backslash.
+
+------------------------------------------------------------------------
+
 .!echo '{'
 
 Gives:
@@ -362,4 +399,16 @@ Gives:
 »
 
 So “+” (plus sign) need not be escaped.
+
+------------------------------------------------------------------------
+
+.!echo '/'
+
+Gives:
+
+«
+/
+»
+
+So “/” (slash/forward-slash) need not be escaped.
 
