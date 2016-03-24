@@ -412,3 +412,35 @@ Gives:
 
 So “/” (slash/forward-slash) need not be escaped.
 
+------------------------------------------------------------------------
+
+.!echo '?'
+
+Gives:
+
+«
+?
+»
+
+So “?” (question mark) need not be escaped.
+
+------------------------------------------------------------------------
+
+.!echo '|'
+
+Gives:
+
+«
+|
+»
+
+.!echo foobar | wc -c
+
+Gives:
+
+«
+7
+»
+
+So “|” (bar/pipe/vertical line) need not be escaped.
+
