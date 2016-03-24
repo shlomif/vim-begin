@@ -146,6 +146,27 @@ So “:” (colon) should not be escaped with a backslash.
 
 ------------------------------------------------------------------------
 
+.!echo ';'
+
+Gives:
+
+«
+;
+»
+
+.!echo foo ; echo bar
+
+Gives:
+
+«
+foo
+bar
+»
+
+So “;” (colon) should not be escaped with a backslash.
+
+------------------------------------------------------------------------
+
 .!echo '$'
 
 Gives:
