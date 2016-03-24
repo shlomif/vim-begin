@@ -1,5 +1,13 @@
 This document aims to see how Vim’s “:!...” handles special characters and
-quoting. Our shell is bash on GNU/Linux.
+quoting. Our shell is bash on GNU/Linux, and one should be aware of its
+default quoting/escaping rules.
+
+Executive summary:
+
+    - “%”, “#”, and “!” should be escaped with a backslash (“\”).
+
+    - All other punctuation/special characters (including a backslash)
+    need not and should not be escaped.
 
 ------------------------------------------------------------------------
 
