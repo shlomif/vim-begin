@@ -37,3 +37,6 @@ $(SCREENSHOTS_PNGS_PREVIEWS): %-preview.png: %.png
 
 upload: all
 	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL)
+
+test: all
+	prove Tests/*.t
