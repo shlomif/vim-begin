@@ -1,7 +1,0 @@
-h1. This is the source code for the Vim Beginners’ Site
-
-It is transformed by "Jekyll":http://github.com/mojombo/jekyll into a static site (type make) and then rsynced to its final location (make upload).
-
-h1. License
-
-The code of this site is MIT Licensed, while the text is mostly under Creative Commons Attribution 3.0 (or later). Feel free to use the HTML and CSS as you please. If you do use them, a link back to http://github.com/mojombo/jekyll would be appreciated, but is not required.
