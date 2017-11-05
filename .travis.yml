@@ -1,0 +1,9 @@
+os: linux
+dist: trusty
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -y ack-grep cmake cpanminus docbook-defguide docbook-xsl docbook-xsl-ns hunspell mercurial myspell-en-gb libhunspell-dev libperl-dev perl valgrind wml xsltproc
+    - sudo dpkg-divert --local --divert /usr/bin/ack --rename --add /usr/bin/ack-grep
+    - sudo cpanm Template Test::TrailingSpace
+    - gem install sass compass compass-blueprint
+script: "m() { make \"$@\" ; } ; cd vim-begin/tt2-source/ && ./gen-helpers && m && m test"
