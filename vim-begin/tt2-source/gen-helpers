@@ -11,3 +11,5 @@ echo
 echo "DEST_HTMLS = $(_finder | perl -lape 's/\.tt2//; s{^src/}{dest/}'| perl -lape 's/$/ \\/')"
 echo
 ) > include.mak
+
+echo "include lib/_Main.mak" > Makefile
