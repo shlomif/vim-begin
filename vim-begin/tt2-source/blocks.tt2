@@ -45,7 +45,7 @@
 <div id='header'>
 <!-- Sitename and Banner -->
 <div class="site-name" id="js-site-name">
-<h1><a href="[% base_path %]">Vim Beginners' Site</a></h1>
+<h1><a href="[% base_path || './' %]">Vim Beginners' Site</a></h1>
 </div>
 <div class="site-slogan" id="js-site-slogan">
 Vim - type less ; edit more.
@@ -57,16 +57,16 @@ Vim - type less ; edit more.
 <div class="nav-main">
 <h3 class="hide">Breadcrumbs Trail</h3>
 <p class="breadcrumbs">
-<a href="[% base_path %]">Vim Beginner’s Site</a>
+<a href="[% base_path || './' %]">Vim Beginner’s Site</a>
 →
-<a class="extra" href="[% base_path %]">Home</a>
+<a class="extra" href="[% base_path || './' %]">Home</a>
 </p>
 
 <h3 class="hide">Global Navigation</h3>
 
 <ul class="about-links">
 
-<li><a href="[% base_path %]about.html">About Us</a></li>
+<li><a href="[% base_path || './' %]about.html">About Us</a></li>
 
 <li><a href="[% base_path %]contact/">Contact</a></li>
 
@@ -77,16 +77,16 @@ Vim - type less ; edit more.
 <h3 class="hide">Main Navigation</h3>
 <div id="left-sidebar">
 
-<a href="[% base_path %]"><img class="logo" src="[% base_path %]images/vim-begin.png"
+<a href="[% base_path || './' %]"><img class="logo" src="[% base_path %]images/vim-begin.png"
     alt="Vim Begin Logo" /></a>
 
 <div id="main_nav_menu">
 <ul class="navbarmain">
 <li>
-<a href="[% base_path %]">Home</a>
+<a href="[% base_path || './' %]">Home</a>
 </li>
 <li>
-<a href="[% base_path %]about.html">About</a>
+<a href="[% base_path || './' %]about.html">About</a>
 </li>
 <li>
 <a href="[% base_path %]news/" title="Previous News Item">News</a>
