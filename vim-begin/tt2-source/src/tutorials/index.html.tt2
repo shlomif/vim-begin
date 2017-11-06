@@ -12,7 +12,7 @@ A very short tutorial covering the absolute basics. (<a href="[% base_path %]tut
 
 <p>
 The core Vim tutorial (so-called <kbd>usr_*.txt</kbd> - part of the Vim
-docuemntation) can be read online
+documentation) can be read online
 or on Vim by typing <kbd>:help</kbd> and later on <kbd>Ctrl+]</kbd> to access
 a hyperlink and <kbd>Ctrl+T</kbd> to return to the position before the last
 link.

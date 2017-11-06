@@ -12,7 +12,7 @@ the Internet, and is still very popular. IRC servers form networks of servers
 - each network is separated from the other networks and the servers of each
 network share the same chat-rooms, user profiles and messages. Each network
 has different rules and conventions and a different culture. This allows
-chat-rooms (called channels in IRC-jargon) with the same name to exist in
+chat-rooms (called channels in IRC jargon) with the same name to exist in
 different networks.
 </p>
 
@@ -60,7 +60,7 @@ List/Comparison of IRC Clients</a>
 
 </ul>
 
-<h2 id="freenode"><a href="http://freenode.net/">FreeNode</a></h2>
+<h2 id="freenode"><a href="http://freenode.net/">Freenode</a></h2>
 
 <p>
 This is most probably the best network for getting help with Vim and

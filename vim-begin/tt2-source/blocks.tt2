@@ -45,7 +45,7 @@
 <div id='header'>
 <!-- Sitename and Banner -->
 <div class="site-name" id="js-site-name">
-<h1><a href="[% base_path || './' %]">Vim Beginners' Site</a></h1>
+<h1><a href="[% base_path || './' %]">Vim Beginners’ Site</a></h1>
 </div>
 <div class="site-slogan" id="js-site-slogan">
 Vim - type less ; edit more.
