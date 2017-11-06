@@ -3,19 +3,20 @@
 use strict;
 use warnings;
 
-use Test::More tests => 1;
+use lib './lib';
 
+use Test::More;
+
+if ( $ENV{VIM_BEGIN_SKIP_SPELL_CHECK} )
 {
-    my $output = `./bin/spell-checker-iface 2>&1`;
-    chomp($output);
-
-    my $status = $?;
-
-    # TEST
-    is ($output, '', "No spelling errors.");
-
-    if ($status)
-    {
-        die "Failed to execute ./bin/spell-checker-iface";
-    }
+    plan skip_all => 'Skipping spell check due to environment variable';
 }
+else
+{
+    plan tests => 1;
+}
+
+use Shlomif::Spelling::Iface;
+
+# TEST
+Shlomif::Spelling::Iface->new->test_spelling("No spelling errors.");
