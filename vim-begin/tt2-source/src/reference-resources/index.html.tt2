@@ -6,7 +6,7 @@
 
 <p>
 The core <a href="http://vimdoc.sourceforge.net/">Vim documentation</a>
-is also available as <tt>:help</tt> and can be used as a reference.
+is also available as <code>:help</code> and can be used as a reference.
 </p>
 
 <h2 id="vim_faq"><a href="https://github.com/chrisbra/vim_faq">The
