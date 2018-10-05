@@ -2,7 +2,7 @@ os: linux
 dist: trusty
 before_install:
     - sudo apt-get update -qq
-    - sudo apt-get install -y cpanminus libhunspell-dev libperl-dev perl
+    - sudo apt-get --no-install-recommends install -y cpanminus libhunspell-dev libperl-dev perl
     - sudo cpanm --notest Alien::Tidyp HTML::Tidy
     - sudo cpanm HTML::Spelling::Site HTML::TokeParser Template Test::HTML::Recursive::DeprecatedTags Test::HTML::Tidy::Recursive Test::TrailingSpace
     - gem install sass compass compass-blueprint
