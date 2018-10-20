@@ -1,16 +1,7 @@
-@import blueprint
-@import blueprint/scaffolding
-@import compass/utilities
-
-+blueprint-typography
-+blueprint-debug
-
 body
     background-color: white
 
 #page-container
-    +container
-
     width: 100%
     color: #000
 
@@ -111,8 +102,6 @@ h1, h2, h3
         font-size: 16px
 
     .about-links
-        +horizontal-list
-
         float: right
 
         // :display block
@@ -127,8 +116,6 @@ h1, h2, h3
                 padding-left: 5px
 
 #left-sidebar
-    +column(5)
-
     border-top: 5px solid #000
     background-color: #cce0ff
     padding-top: 20px
@@ -184,9 +171,6 @@ h1, h2, h3
         font-family: monospace
 
 #right-sidebar
-    +column(4)
-    +last
-
     font-size: 1.3em
     padding-top: 20px
     padding-left: 5px

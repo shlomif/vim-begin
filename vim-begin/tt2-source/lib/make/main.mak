@@ -7,6 +7,10 @@ all:
 
 include lib/make/include.mak
 
+SASS_STYLE = compressed
+# SASS_STYLE = expanded
+SASS_CMD = sass --style $(SASS_STYLE)
+
 SOURCES = $(shell find src -name '*.html') _config.yml atom.xml CNAME README.textile
 GENERATED_HTMLS = $(shell find _site -name '*.html')
 GENERATED_CSS = src/css/style.css
@@ -53,8 +57,8 @@ min_svgs: $(T2_SVGS__MIN) $(T2_SVGS__svgz)
 
 all: min_svgs
 
-$(GENERATED_CSS) : sass/jqui-override.sass sass/style.sass sass/print.sass sass/vim_syntax_highlighting.sass
-	compass compile
+$(GENERATED_CSS) : lib/sass/jqui-override.sass lib/sass/style.sass lib/sass/print.sass lib/sass/vim_syntax_highlighting.sass
+	$(SASS_CMD) lib/sass/style.sass $@
 	mkdir -p $(D)/css
 	cp -f src/css/*.css $(D)/css/
 
