@@ -1,6 +1,8 @@
 # GENERATED_HTMLS = _site/index.html _site/books/index.html _site/mailing-lists/index.html
 D = dest
 
+SHELL = bash
+
 all:
 
 include include.mak
