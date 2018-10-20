@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 _finder()
 {
@@ -12,4 +12,4 @@ echo "DEST_HTMLS = $(_finder | perl -lape 's/\.tt2//; s{^src/}{dest/}'| perl -la
 echo
 ) > include.mak
 
-echo "include lib/_Main.mak" > Makefile
+echo "include lib/make/main.mak" > Makefile
