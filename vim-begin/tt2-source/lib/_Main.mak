@@ -63,4 +63,4 @@ upload: all
 	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL)
 
 test: all
-	prove Tests/*.t
+	prove Tests/*.{py,t}

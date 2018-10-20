@@ -68,7 +68,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 | <a href="http://jigsaw.w3.org/css-validator/" title="Validate Style Sheet as W3C CSS 3.0 Compliant">W3C CSS 3.0</a>
 <br />
 <b>Hosted by:</b> <a href="http://hexten.net/">Hexten.net</a>.
-<script type="text/javascript" src="[% base_path %]js/selfl.js"></script>
+<script src="[% base_path %]js/selfl.js"></script>
 </div>
 
 </body>
