@@ -1,6 +1,8 @@
 # GENERATED_HTMLS = _site/index.html _site/books/index.html _site/mailing-lists/index.html
 D = dest
 
+all:
+
 include include.mak
 
 SOURCES = $(shell find src -name '*.html') _config.yml atom.xml CNAME README.textile
@@ -19,6 +21,14 @@ HTACCESS_DEST = $(D)/.htaccess
 
 UPLOAD_URL = hostgator:domains/vim.begin-site.org/
 
+VIM_BEGIN_SVG := dest/images/vim-begin.svg
+
+$(VIM_BEGIN_SVG): ../vim-begin-logo/Vim-begin-logo.svg
+	cp -f $< $@
+
+
+T2_IMAGES_DEST = $(VIM_BEGIN_SVG)
+
 all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 
 $(DEST_HTMLS): $(SRC_TT2S) footer.tt2 blocks.tt2
@@ -26,6 +36,20 @@ $(DEST_HTMLS): $(SRC_TT2S) footer.tt2 blocks.tt2
 
 $(HTACCESS_DEST): htaccess.conf
 	cp -f $< $@
+
+T2_SVGS__BASE := $(filter %.svg,$(T2_IMAGES_DEST))
+T2_SVGS__MIN := $(T2_SVGS__BASE:%.svg=%.min.svg)
+T2_SVGS__svgz := $(T2_SVGS__BASE:%.svg=%.svgz)
+
+$(T2_SVGS__MIN): %.min.svg: %.svg
+	minify --svg-decimals 3 -o $@ $<
+
+$(T2_SVGS__svgz): %.svgz: %.min.svg
+	gzip --best < $< > $@
+
+min_svgs: $(T2_SVGS__MIN) $(T2_SVGS__svgz)
+
+all: min_svgs
 
 $(GENERATED_CSS) : sass/jqui-override.sass sass/style.sass sass/print.sass sass/vim_syntax_highlighting.sass
 	compass compile
