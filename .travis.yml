@@ -6,4 +6,5 @@ before_install:
     - sudo cpanm --notest Alien::Tidyp HTML::Tidy
     - sudo cpanm HTML::Spelling::Site HTML::TokeParser Template Test::HTML::Recursive::DeprecatedTags Test::HTML::Tidy::Recursive Test::TrailingSpace
     - gem install sass compass compass-blueprint
+    - go get -u github.com/tdewolff/minify/cmd/minify
 script: "m() { SKIP_SPELL_CHECK=1 make \"$@\" ; } ; cd vim-begin/tt2-source/ && ./gen-helpers && m && m test"
