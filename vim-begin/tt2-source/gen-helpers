@@ -6,10 +6,10 @@ _finder()
 }
 
 (
-echo "SRC_TT2S = $(_finder | perl -lape 's/$/ \\/')"
+echo "SRC_TT2S = $(_finder | perl -lpe 's/$/ \\/')"
 echo
-echo "DEST_HTMLS = $(_finder | perl -lape 's/\.tt2//; s{^src/}{dest/}'| perl -lape 's/$/ \\/')"
+echo "DEST_HTMLS = $(_finder | perl -lpe 's/\.tt2//; s{^src/}{dest/}' | perl -lpe 's/$/ \\/' )"
 echo
-) > include.mak
+) > lib/make/include.mak
 
 echo "include lib/make/main.mak" > Makefile

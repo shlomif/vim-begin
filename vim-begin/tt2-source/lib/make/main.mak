@@ -5,7 +5,7 @@ SHELL = bash
 
 all:
 
-include include.mak
+include lib/make/include.mak
 
 SOURCES = $(shell find src -name '*.html') _config.yml atom.xml CNAME README.textile
 GENERATED_HTMLS = $(shell find _site -name '*.html')
