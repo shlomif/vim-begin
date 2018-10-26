@@ -52,8 +52,6 @@ Vim - type less ; edit more.
 </div>
 </div>
 
-<div id="page-container">
-
 <div class="nav-main">
 <h3 class="hide">Breadcrumbs Trail</h3>
 <p class="breadcrumbs">
@@ -73,6 +71,8 @@ Vim - type less ; edit more.
 </ul>
 
 </div>
+
+<div id="page-container">
 
 <h3 class="hide">Main Navigation</h3>
 <div id="left-sidebar">
