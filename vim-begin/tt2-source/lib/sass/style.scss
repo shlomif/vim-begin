@@ -1,3 +1,5 @@
+@import "compass";
+
 body {
     background-color: white;
 }
@@ -128,6 +130,7 @@ h1, h2, h3 {
     }
 
     .about-links {
+        @include horizontal-list;
         float: right;
 
         // :display block
