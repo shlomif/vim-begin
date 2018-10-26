@@ -4,24 +4,6 @@
 
 </div>
 
-<h3 class="hide">Sidebar</h3>
-<div id="right-sidebar">
-<div class="testimonials">
-<h2>Testimonials</h2>
-<b>TODO : Add more</b>
-<p>
-<a href="[% base_path %]learn/who-is-using/">More…</a>
-</p>
-</div>
-<div class="news-box">
-<h2><a href="[% base_path %]news/">News</a></h2>
-<ul>
-<li>
-<a href="[% base_path %]news/">More news…</a>
-</li>
-</ul>
-</div>
-</div>
 </div>
 
 
