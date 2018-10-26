@@ -53,7 +53,7 @@ min_svgs: $(T2_SVGS__MIN) $(T2_SVGS__svgz)
 
 all: min_svgs
 
-$(GENERATED_CSS) : sass/jqui-override.sass sass/style.sass sass/print.sass sass/vim_syntax_highlighting.sass
+$(GENERATED_CSS) : lib/sass/jqui-override.scss lib/sass/style.scss lib/sass/print.scss lib/sass/vim_syntax_highlighting.scss
 	compass compile
 	mkdir -p $(D)/css
 	cp -f src/css/*.css $(D)/css/

@@ -1,0 +1,466 @@
+@import "blueprint";
+@import "blueprint/scaffolding";
+@import "compass/utilities";
+
+@include blueprint-typography;
+@include blueprint-debug;
+
+body {
+    background-color: white;
+}
+
+#page-container {
+    @include container;
+
+    width: 100%;
+    color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+@mixin hover-effect {
+    &:hover {
+        color: red;
+    }
+}
+
+/* Headers positioning common elements mix-in */
+@mixin headers-pos {
+    margin-left: 40px;
+}
+
+@mixin header-style {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+@mixin side-box {
+    border: 1px solid #c8c8c8;
+    padding: 2pt 8pt;
+
+    &:hover {
+        border-color: black;
+    }
+
+    h2 {
+        margin-top: 3pt;
+    }
+}
+
+a {
+    color: blue;
+
+    @include hover-effect;
+}
+
+a:active {
+    color: green;
+}
+
+a:visited {
+    color: #006400;
+}
+
+a:visited:hover {
+    color: red;
+}
+
+h1, h2, h3 {
+    font-family: arial, verdana, sans-serif !important;
+    font-weight: bold;
+    margin-top: 10pt;
+}
+
+#header {
+    position: relative;
+    background-color: #6a9850;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 160px;
+
+    .site-name {
+        position: absolute;
+        top: 20px;
+
+        h1 {
+            margin: 0px;
+
+            @include headers-pos;
+
+            a {
+                @include header-style;
+
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .site-slogan {
+        @include header-style;
+
+        position: absolute;
+        top: 70px;
+        font-weight: bold;
+        font-size: 1.3em;
+
+        @include headers-pos;
+    }
+}
+
+.nav-main {
+    border-top: 1px solid #7d7d7d;
+    border-bottom: 1px solid #7d7d7d;
+    background-color: #efefef;
+    padding-left: 20px;
+    overflow: hidden;
+    display: block;
+
+    a {
+        color: #2F2FCF;
+        font-weight: bold;
+        text-decoration: none;
+
+        @include hover-effect;
+    }
+
+    .breadcrumbs {
+        float: left;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .about-links {
+        @include horizontal-list;
+
+        float: right;
+
+        // :display block
+        margin-left: 100px;
+
+        li {
+            a {
+                font-size: 1.2em;
+                text-transform: uppercase;
+                text-decoration: none;
+                border-left: 1px solid;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+#left-sidebar {
+    @include column(5);
+
+    border-top: 5px solid #000;
+    background-color: #cce0ff;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 1.2em;
+    margin: 10px;
+    border-bottom-left-radius: 20px;
+
+    h2 {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+
+    &:hover {
+        border-top-color: #44F;
+    }
+}
+
+#content {
+    width: 500px;
+    float: left;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 1.3em;
+    margin-top: 20px;
+
+    .full_width_notice {
+        @include side-box;
+
+        border-color: black;
+        font-size: 1.2em;
+        background-color: #ccccff;
+        text-align: center;
+
+        // :border 1px solid #000
+        width: 400px;
+        margin: 50px auto;
+
+        &:hover {
+            border-color: #585858;
+        }
+    }
+
+    .toggle_nav_control {
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.7em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    pre, tt {
+        font-family: monospace;
+    }
+}
+
+#right-sidebar {
+    @include column(4);
+    @include last;
+
+    font-size: 1.3em;
+    padding-top: 20px;
+    padding-left: 5px;
+    margin: 10px;
+    color: #6e6e6e;
+
+    h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .testimonials {
+        @include side-box;
+
+        background-color: #edf6e5;
+
+        h2 {
+            color: #6e6e6e;
+            background-color: #dceecc;
+        }
+    }
+
+    .news-box {
+        @include side-box;
+
+        margin-top: 20px;
+
+        h2 {
+            background-color: #e1e1e1;
+
+            a {
+                color: #008800;
+
+                @include hover-effect;
+            }
+        }
+    }
+}
+
+#footer {
+    border-top: 1px solid #7d7d7d;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+div.bookinfo {
+    border-style: dotted;
+    border-width: thin;
+
+    /* LightYellow */
+    background-color: #FFFFE0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+
+    &:hover {
+        border-style: solid;
+    }
+
+    h3 {
+        border: none;
+        margin-top: 0em;
+        padding-left: 0em;
+        background-color: transparent;
+    }
+}
+
+h2 {
+    strong {
+        color: red;
+    }
+}
+
+ul, ol {
+    margin-left: 0.5em;
+    padding-left: 1em;
+}
+
+.further_reading {
+    float: right;
+    border: #99b double medium;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 170px;
+    background-color: #ddf;
+
+    ul {
+        padding-left: 0em;
+    }
+}
+
+.screenshot {
+    float: right;
+    border: black double 3pt;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.study_group {
+    margin-top: 2em;
+}
+
+@mixin indent {
+    margin-left: 3em;
+}
+
+.indent {
+    @include indent;
+}
+
+$ss_margin: 2em;
+
+.sub_section {
+    margin-top: $ss_margin;
+
+    // margin-bottom: $ss_margin
+    padding-left: 1.5em;
+    border-left: black solid 3pt;
+    padding-top: 0.3em;
+
+    // padding-bottom: 0.3em
+    // border-radius: 5pt
+    &:hover {
+        border-left-color: #555555;
+    }
+
+    > p:last-child, > ul:last-child > li:last-child > p:last-child, > ol:last-child > li:last-child > p:last-child {
+        padding-bottom: 1em;
+    }
+}
+
+@import "vim_syntax_highlighting";
+
+/* From http://hyperpolyglot.org/scripting : */
+.wiki-content-table {
+    margin-left: 0;
+}
+
+table.wiki-content-table {
+    border-collapse: collpase;
+    border-spacing: 0;
+
+    th {
+        background-color: #EEEEEE;
+        border: 1px solid #888888;
+        padding: 0.3em 0.7em;
+    }
+}
+
+table.wiki-content-table *, code, table.wiki-content-table tr td span.fixed, table.wiki-content-table tr td span.fixed * {
+    font-family: consolas, inconsolata, andale mono, monospace;
+}
+
+table.wiki-content-table td {
+    border: 1px solid #888888;
+    padding: 0.3em 0.7em;
+}
+
+.wiki-content-table td {
+    text-align: left;
+}
+
+table.wiki-content-table th *, table.wiki-content-table td:first-child *, table.wiki-content-table td:first-child {
+    font-family: helvetica, arial, san-serif;
+}
+
+// Added on my own.
+.wiki-content-table {
+    font-size: 80%;
+
+    * {
+        // overflow: auto
+        white-space: pre-wrap !important;
+    }
+}
+
+.todo {
+    display: none;
+}
+
+@mixin rounded_corners($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.mswin_download_button a {
+    background-color: #5DEA17;
+    padding: 1em;
+    border: green 2pt solid;
+    float: right;
+    color: black;
+    font-size: 130%;
+    margin-bottom: 1em;
+
+    @include rounded_corners(20px);
+
+    &:hover {
+        background-color: #A1EB7C;
+        color: #444;
+        text-decoration: none;
+    }
+
+    img {
+        width: 80px;
+        margin-left: 1em;
+    }
+}
+
+kbd {
+    font-family: monospace;
+    color: BlueViolet;
+}
+
+.fork_me {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    z-index: 1;
+    width: 150px;
+}
+
+img.logo {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    padding: 10px;
+
+    &:hover {
+        background-color: #c0d0f0;
+    }
+}
