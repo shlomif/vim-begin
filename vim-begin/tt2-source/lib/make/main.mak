@@ -26,6 +26,7 @@ DESTS = $(D)/index.html
 HTACCESS_DEST = $(D)/.htaccess
 
 UPLOAD_URL = hostgator:domains/vim.begin-site.org/
+UPLOAD_URL_BETA = hostgator:domains/vim.begin-site.org/__Beta-ugrt/
 
 VIM_BEGIN_SVG := dest/images/vim-begin.svg
 
@@ -64,6 +65,9 @@ $(GENERATED_CSS) : lib/sass/jqui-override.scss lib/sass/style.scss lib/sass/prin
 
 $(SCREENSHOTS_PNGS_PREVIEWS): %-preview.png: %.png
 	convert $< -resize 400 $@
+
+upload_beta: all
+	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL_BETA)
 
 upload: all
 	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL)

@@ -77,7 +77,7 @@ Vim - type less ; edit more.
 <h3 class="hide">Main Navigation</h3>
 <div id="left-sidebar">
 
-<a href="[% base_path || './' %]"><img class="logo" src="[% base_path %]images/vim-begin.svg"
+<a href="[% base_path || './' %]"><img class="logo" src="[% base_path %]images/vim-begin.min.svg"
     alt="Vim Begin Logo" /></a>
 
 <div id="main_nav_menu">
