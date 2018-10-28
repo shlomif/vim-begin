@@ -1,19 +1,14 @@
-@import "blueprint";
-@import "blueprint/scaffolding";
-@import "compass/utilities";
-
-@include blueprint-typography;
-@include blueprint-debug;
+@import "compass";
 
 body {
     background-color: white;
 }
 
 #page-container {
-    @include container;
-
     width: 100%;
     color: #000;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .hide {
@@ -111,12 +106,17 @@ h1, h2, h3 {
 }
 
 .nav-main {
+    // width: 100%;
+    color: #000;
     border-top: 1px solid #7d7d7d;
     border-bottom: 1px solid #7d7d7d;
     background-color: #efefef;
     padding-left: 20px;
-    overflow: hidden;
-    display: block;
+    // overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    vertical-align: top;
+    // font-size: 20%;
 
     a {
         color: #2F2FCF;
@@ -126,23 +126,31 @@ h1, h2, h3 {
         @include hover-effect;
     }
 
+    @mixin _common() {
+        margin-top: 10px;
+    }
+
     .breadcrumbs {
-        float: left;
-        margin-bottom: 0;
-        font-size: 16px;
+        grid-column: 1 / span 1;
+        // float: left;
+        // margin-bottom: 0;
+        @include _common;
     }
 
     .about-links {
         @include horizontal-list;
-
-        float: right;
+        @include _common;
+        grid-column: 2 / span 1;
+        // float: right;
+        margin-right: 1em;
+        text-align: right;
+        margin-left: auto;
 
         // :display block
-        margin-left: 100px;
+        // margin-left: 100px;
 
         li {
             a {
-                font-size: 1.2em;
                 text-transform: uppercase;
                 text-decoration: none;
                 border-left: 1px solid;
@@ -153,15 +161,14 @@ h1, h2, h3 {
 }
 
 #left-sidebar {
-    @include column(5);
-
     border-top: 5px solid #000;
     background-color: #cce0ff;
     padding-top: 20px;
     padding-left: 10px;
-    font-size: 1.2em;
+    padding-bottom: 2em;
     margin: 10px;
     border-bottom-left-radius: 20px;
+    grid-column: 1 / span 1;
 
     h2 {
         font-size: 1.4em;
@@ -175,12 +182,13 @@ h1, h2, h3 {
 }
 
 #content {
-    width: 500px;
-    float: left;
     padding-right: 20px;
     padding-left: 10px;
-    font-size: 1.3em;
+    @if false {
+        font-size: 1.3em;
+    }
     margin-top: 20px;
+    grid-column: 2 / span 4;
 
     .full_width_notice {
         @include side-box;
@@ -221,9 +229,6 @@ h1, h2, h3 {
 }
 
 #right-sidebar {
-    @include column(4);
-    @include last;
-
     font-size: 1.3em;
     padding-top: 20px;
     padding-left: 5px;
@@ -265,10 +270,17 @@ h1, h2, h3 {
 }
 
 #footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
     border-top: 1px solid #7d7d7d;
+    padding-top: 1em;
     text-align: center;
-    font-size: 1.2em;
+    @if false {
+       font-size: 1.2em;
+    }
     margin-bottom: 10px;
+    width: 70%;
 }
 
 div.bookinfo {
@@ -463,4 +475,9 @@ img.logo {
     &:hover {
         background-color: #c0d0f0;
     }
+}
+
+.share_this {
+    margin-bottom: 2em;
+    margin-top: 2em;
 }

@@ -7,6 +7,10 @@ all:
 
 include lib/make/include.mak
 
+SASS_STYLE = compressed
+# SASS_STYLE = expanded
+SASS_CMD = sass --style $(SASS_STYLE)
+
 SOURCES = $(shell find src -name '*.html') _config.yml atom.xml CNAME README.textile
 GENERATED_HTMLS = $(shell find _site -name '*.html')
 GENERATED_CSS = src/css/style.css
@@ -22,6 +26,7 @@ DESTS = $(D)/index.html
 HTACCESS_DEST = $(D)/.htaccess
 
 UPLOAD_URL = hostgator:domains/vim.begin-site.org/
+UPLOAD_URL_BETA = hostgator:domains/vim.begin-site.org/__Beta-ugrt/
 
 VIM_BEGIN_SVG := dest/images/vim-begin.svg
 
@@ -54,12 +59,16 @@ min_svgs: $(T2_SVGS__MIN) $(T2_SVGS__svgz)
 all: min_svgs
 
 $(GENERATED_CSS) : lib/sass/jqui-override.scss lib/sass/style.scss lib/sass/print.scss lib/sass/vim_syntax_highlighting.scss
+	# $(SASS_CMD) lib/sass/style.scss $@
 	compass compile
 	mkdir -p $(D)/css
 	cp -f src/css/*.css $(D)/css/
 
 $(SCREENSHOTS_PNGS_PREVIEWS): %-preview.png: %.png
 	convert $< -resize 400 $@
+
+upload_beta: all
+	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL_BETA)
 
 upload: all
 	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL)
