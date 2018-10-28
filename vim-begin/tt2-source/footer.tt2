@@ -2,14 +2,14 @@
 <a href="http://www.addtoany.com/share_save"><img src="https://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" class="bless" alt="Share/Bookmark" /></a>
 </p>
 
-</div>
+</main>
 
 </div>
 
 
 <!-- FOOTER -->
 <h3 class="hide">Footer</h3>
-<div id="footer">
+<footer id="footer">
 <p>
 <!-- Creative Commons License -->
 Unless noted otherwise, the Vim Beginners’ Site is <b>licensed</b> under
@@ -58,7 +58,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <b>Hosted by:</b> <a href="http://hexten.net/">Hexten.net</a>.
 </p>
 <script src="[% base_path %]js/selfl.js"></script>
-</div>
+</footer>
 
 </body>
 </html>

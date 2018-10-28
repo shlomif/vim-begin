@@ -174,7 +174,7 @@ Vim - type less ; edit more.
 </div>
 
 <h3 class="hide">Content</h3>
-<div id="content">
+<main id="content">
 
 <h1>[% title %]</h1>
 
