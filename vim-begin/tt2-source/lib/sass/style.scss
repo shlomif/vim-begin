@@ -259,10 +259,17 @@ h1, h2, h3 {
 }
 
 #footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
     border-top: 1px solid #7d7d7d;
+    padding-top: 1em;
     text-align: center;
-    font-size: 1.2em;
+    @if false {
+       font-size: 1.2em;
+    }
     margin-bottom: 10px;
+    width: 70%;
 }
 
 div.bookinfo {
@@ -457,4 +464,9 @@ img.logo {
     &:hover {
         background-color: #c0d0f0;
     }
+}
+
+.share_this {
+    margin-bottom: 2em;
+    margin-top: 2em;
 }
