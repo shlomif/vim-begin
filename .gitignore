@@ -3,10 +3,12 @@ vim-begin/tt2-source/Makefile
 vim-begin/tt2-source/Tests/data/cache/spelling-timestamp.json
 vim-begin/tt2-source/_site
 vim-begin/tt2-source/dest
-vim-begin/tt2-source/include.mak
+vim-begin/tt2-source/node_modules/
+vim-begin/tt2-source/lib/make/include.mak
 vim-begin/tt2-source/src/css/jqui-override.css
 vim-begin/tt2-source/src/css/print.css
 vim-begin/tt2-source/src/css/style.css
+vim-begin/tt2-source/src/css/style.css.map
 vim-begin/tt2-source/src/css/vim_syntax_highlighting.css
 vim-begin/tt2-source/src/jqui-override.css
 vim-begin/tt2-source/src/print.css
