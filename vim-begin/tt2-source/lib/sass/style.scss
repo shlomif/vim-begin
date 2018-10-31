@@ -11,8 +11,19 @@ body {
     grid-template-columns: repeat(5, 1fr);
 }
 
-.hide {
-    display: none;
+.hide , .hide a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus {
+        position: static;
+        width: auto;
+        height: auto;
+    }
 }
 
 @mixin hover-effect {
