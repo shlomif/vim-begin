@@ -38,7 +38,7 @@ T2_IMAGES_DEST = $(VIM_BEGIN_SVG)
 
 all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 
-$(DEST_HTMLS): $(SRC_TT2S) footer.tt2 blocks.tt2
+$(DEST_HTMLS): src/js/jq.js $(SRC_TT2S) footer.tt2 blocks.tt2
 	perl process.pl
 
 $(HTACCESS_DEST): htaccess.conf
@@ -75,3 +75,8 @@ upload: all
 
 test: all
 	prove Tests/*.{py,t}
+
+src/js/jq.js: node_modules/jquery/dist/jquery.min.js
+	cp -f $< $@
+
+all: src/js/jq.js

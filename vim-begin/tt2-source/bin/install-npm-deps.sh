@@ -8,6 +8,7 @@
 npm install \
     camel-case \
     html-minifier \
+    jquery \
     param-case \
     sass \
     uglify-es \

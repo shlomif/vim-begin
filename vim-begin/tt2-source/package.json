@@ -1,0 +1,23 @@
+{
+  "name": "vim-begin",
+  "version": "0.0.1",
+  "description": "vim begin",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "camel-case": "^3.0.0",
+    "html-minifier": "^4.0.0",
+    "jquery": "^3.4.1",
+    "param-case": "^2.1.1",
+    "sass": "^1.19.0",
+    "uglify-es": "^3.3.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED"
+}
