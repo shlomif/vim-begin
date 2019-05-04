@@ -1,11 +1,11 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Training' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <p>
 We do not know of any Vim trainers. If you provide training for Vim, please
 let us know.
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

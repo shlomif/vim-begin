@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Web Forums' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2 id="stackoverflow"><a href="http://stackoverflow.com/">Stack Overflow</a></h2>
 
 <p>
@@ -14,4 +14,4 @@ category</a> there.
 
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

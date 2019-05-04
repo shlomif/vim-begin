@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Links' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <ul>
 
 <li>
@@ -84,4 +84,4 @@ The BEST HTML EDITOR</a> - the only editor that is better than Vim. ;-).
 </ul>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

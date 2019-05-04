@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Exercises' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2 id="vim_golf">Vim Golf</h2>
 
 <p>
@@ -34,4 +34,4 @@ which also supports vim.
 </ul>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

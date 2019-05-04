@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Learn Vim Now!' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2 id="why_learn">Why Learn Vim?</h2>
 
 <p>
@@ -84,4 +84,4 @@ See <a href="[% base_path %]resources/">our resources page</a> for some options.
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

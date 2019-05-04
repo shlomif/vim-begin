@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'The Vim Beginners’ Site' -%]
 [%- SET base_path = '' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 
 <p>
 <a href="http://www.vim.org/">The Vim Text Editor</a> is an open-source
@@ -22,4 +22,4 @@ to resources that are of good quality. It aims to be for Vim what
 Perl programming language.
 </p>
 
-[% PROCESS "footer.tt2" %]
+[% END %]

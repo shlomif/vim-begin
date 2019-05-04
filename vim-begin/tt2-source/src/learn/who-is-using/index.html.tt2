@@ -1,10 +1,10 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Who is Using Vim?' -%]
 [%- SET base_path = '../../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <p>
 <b>TODO: FILL IN.</b>
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

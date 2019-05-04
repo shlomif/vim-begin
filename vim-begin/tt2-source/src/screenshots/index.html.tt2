@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Screenshots' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <a href="[% base_path %]screenshots/images/gvim-perl-256.png"><img
     src="[% base_path %]screenshots/images/gvim-perl-256-preview.png"
     alt="GVim Editing some perl code preview" /></a>
@@ -28,4 +28,4 @@ MacVim editing JavaScript code with the
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

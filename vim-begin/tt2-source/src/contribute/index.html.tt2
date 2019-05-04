@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Contribute to Vim-Begin' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <p>
 You can contribute to Vim-Begin by:
 </p>
@@ -30,4 +30,4 @@ requests (or less preferably patches).
 </ol>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

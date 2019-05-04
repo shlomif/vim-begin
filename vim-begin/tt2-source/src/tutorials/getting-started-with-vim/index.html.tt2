@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Getting Started With Vim by Bilal Quadri' -%]
 [%- SET base_path = '../../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2>Note</h2>
 
 <p>
@@ -247,4 +247,4 @@ This work is licensed under a <a rel="license" href="http://creativecommons.org/
 </footer>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

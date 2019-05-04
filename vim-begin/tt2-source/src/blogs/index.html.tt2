@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Blogs' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2 id="daily_vim"><a href="http://dailyvim.blogspot.com/">Daily Vim</a></h2>
 
 <p>
@@ -37,4 +37,4 @@ blog</a>.
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

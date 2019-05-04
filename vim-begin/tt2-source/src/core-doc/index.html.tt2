@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Core Documentation' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2 id="core_doc"><a href="http://vimdoc.sourceforge.net/">Vim Core Documentation</a></h2>
 
 <p>
@@ -12,4 +12,4 @@ link.
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

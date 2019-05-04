@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Games that Teach Vim' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <h2 id="vim_adventures"><a href="http://vim-adventures.com/">Vim
 Adventures</a></h2>
 
@@ -12,4 +12,4 @@ feature, and the levels above the third require payment.
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

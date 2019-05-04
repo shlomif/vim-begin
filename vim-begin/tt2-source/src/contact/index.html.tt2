@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Contact Us' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <p>
 The chief webmaster of this site is
 <a href="http://www.shlomifish.org/">Shlomi Fish</a> and his
@@ -15,4 +15,4 @@ including an issue tracker (a.k.a “bug tracker”).
 </p>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]

@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Contributors’ List' -%]
 [%- SET base_path = '../../' -%]
-[%- PROCESS start_html -%]
+[% WRAPPER wrap_html %]
 <ul>
 
 <li>
@@ -39,4 +39,4 @@ the GNU General Public Licence version 2-or-later.
 </ul>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]
