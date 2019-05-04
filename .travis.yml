@@ -3,9 +3,9 @@ dist: trusty
 before_install:
     - sudo apt-get update -qq
     - sudo apt-get --no-install-recommends install -y cpanminus libhunspell-dev libperl-dev perl python3 python3-setuptools python3-pip
-    - sudo cpanm --notest Alien::Tidyp HTML::Tidy
-    - sudo cpanm HTML::Spelling::Site HTML::TokeParser Template Test::HTML::Recursive::DeprecatedTags Test::HTML::Tidy::Recursive Test::TrailingSpace
-    - gem install sass compass compass-blueprint
+    - eval "$(GIMME_GO_VERSION=1.11 gimme)"
     - go get -u github.com/tdewolff/minify/cmd/minify
+    - sudo cpanm HTML::Spelling::Site Template Test::HTML::Recursive::DeprecatedTags Test::TrailingSpace
+    - gem install sass compass compass-blueprint
     - sudo -H `which python3` -m pip install pycotap vnu_validator
 script: "m() { SKIP_SPELL_CHECK=1 make \"$@\" ; } ; cd vim-begin/tt2-source/ && ./gen-helpers && m && m test"
