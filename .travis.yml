@@ -8,4 +8,4 @@ before_install:
     - sudo cpanm HTML::Spelling::Site Template Test::HTML::Recursive::DeprecatedTags Test::TrailingSpace
     - gem install sass compass compass-blueprint
     - sudo -H `which python3` -m pip install pycotap vnu_validator
-script: "m() { SKIP_SPELL_CHECK=1 make \"$@\" ; } ; cd vim-begin/tt2-source/ && ./gen-helpers && m && m test"
+script: "m() { SKIP_SPELL_CHECK=1 make \"$@\" ; } ; cd vim-begin/tt2-source/ && bash -x bin/install-npm-deps.sh && ./gen-helpers && m && m test"
