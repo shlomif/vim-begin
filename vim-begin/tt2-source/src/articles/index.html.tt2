@@ -12,5 +12,10 @@ By Bram Moolenaar, the creator of Vim.
 <h3><a href="http://www.youtube.com/watch?v=eX9m3g5J-XA">Google Tech Talk by Bram</a></h3>
 </div>
 
+<h2 id="registers-and-beyond"><a href="https://www.brianstorti.com/vim-registers/">Vim registers: The basics and beyond</a></h2>
+
+<p>
+How to do copy+paste and beyond.
+</p>
 
 [% PROCESS "footer.tt2" %]
