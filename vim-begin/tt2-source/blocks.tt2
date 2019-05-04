@@ -178,6 +178,11 @@ Vim - type less ; edit more.
 <h1>[% title %]</h1>
 
 [%- END -%]
+[%- BLOCK wrap_html -%]
+[%- PROCESS start_html -%]
+[% content %]
+[% PROCESS "footer.tt2" %]
+[%- END -%]
 
 [%-# vim:ft=tt2html:
 -%]

@@ -1,7 +1,7 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'News' -%]
 [%- SET base_path = '../' -%]
-[%- PROCESS start_html -%]
+[%- WRAPPER wrap_html %]
 <h2 id="news_2012_12_27_vim_begin_launches">Vim-Begin Launches</h2>
 
 <p>
@@ -38,4 +38,4 @@ Here is some coverage of this announcement:
 </ol>
 
 
-[% PROCESS "footer.tt2" %]
+[% END %]
