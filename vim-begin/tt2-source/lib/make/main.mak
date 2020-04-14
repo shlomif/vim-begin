@@ -41,6 +41,8 @@ all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 $(DEST_HTMLS): src/js/jq.js $(SRC_TT2S) footer.tt2 blocks.tt2
 	perl process.pl
 
+all: $(DEST_HTMLS) dest/js/jq.js
+
 $(HTACCESS_DEST): htaccess.conf
 	cp -f $< $@
 
