@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+perl bin/my-cookiecutter.pl
 _finder()
 {
     ( find src -name '*.html.tt2' | (LC_ALL=C sort) )
