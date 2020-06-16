@@ -27,19 +27,12 @@ while ( my $result = $tree->next_obj() )
 {
     if ( $result->is_dir() )
     {
-        if ( $result->path() eq './dest' )
-        {
-            $tree->prune();
-        }
-        else
-        {
-            mkpath(
-                File::Spec->catdir(
-                    File::Spec->curdir(), "dest",
-                    @{ $result->full_components() }
-                )
-            );
-        }
+        mkpath(
+            File::Spec->catdir(
+                File::Spec->curdir(), "dest",
+                @{ $result->full_components() }
+            )
+        );
     }
     else
     {
@@ -56,9 +49,11 @@ while ( my $result = $tree->next_obj() )
                 binmode => ':utf8',
             ) or die $template->error();
         }
-        elsif ($basename !~ /~\z/
-            && ( !( $basename =~ /\A\./ && $basename =~ /\.swp\z/ ) )
-            && ( $basename ne 'process.pl' ) )
+        elsif (
+            not(   ( $basename =~ /~\z/ )
+                or ( $basename =~ /\A\./ )
+                or ( $basename =~ /\.swp\z/ ) )
+            )
         {
             copy(
                 $result->path,
