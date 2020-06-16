@@ -1,6 +1,5 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Frequently Asked Questions Lists ( FAQs )' -%]
-[%- SET base_path = '../' -%]
 [% WRAPPER wrap_html %]
 <h2 id="vim_faq"><a href="https://github.com/chrisbra/vim_faq">The
 Vim FAQ</a></h2>

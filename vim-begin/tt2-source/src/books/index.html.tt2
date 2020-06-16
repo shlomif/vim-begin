@@ -1,6 +1,5 @@
 [%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Recommended Books for Learning Vim' -%]
-[%- SET base_path = '../' -%]
 [% WRAPPER wrap_html %]
 <div id="home">
 
