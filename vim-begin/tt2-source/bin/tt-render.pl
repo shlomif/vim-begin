@@ -40,7 +40,7 @@ while ( my $result = $tree->next_obj() )
         if ( $basename =~ s/\.html\.tt2\z/.html/ )
         {
             $vars->{base_path} =
-                ( '../' x ( scalar( @{ $result->full_components } ) - 1 ) );
+                ( '../' x $#{ $result->full_components } );
             $template->process(
                 $result->path(),
                 $vars,
