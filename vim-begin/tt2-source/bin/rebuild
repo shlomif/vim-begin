@@ -4,7 +4,7 @@ rebuild()
     (
         set -x
         set -e
-        git clean -dxf .
+        git clean -dfqx .
         bash -x bin/install-npm-deps.sh
         ./gen-helpers
         gmake bulk-make-dirs
