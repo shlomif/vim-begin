@@ -19,7 +19,6 @@ RSYNC = rsync --progress --verbose --rsh=ssh -a
 
 RSYNC_EXTRA_OPTS =
 
-DESTS = $(D)/index.html
 HTACCESS_DEST = $(D)/.htaccess
 
 UPLOAD_URL = hostgator:domains/vim.begin-site.org/
@@ -33,7 +32,7 @@ $(VIM_BEGIN_SVG): ../vim-begin-logo/Vim-begin-logo.svg
 
 WEBSITE_IMAGES_DEST = $(VIM_BEGIN_SVG)
 
-all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
+all: $(GENERATED_CSS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 
 $(DEST_HTMLS): src/js/jq.js $(SRC_TT2S) footer.tt2 blocks.tt2
 	perl process.pl
@@ -87,4 +86,3 @@ src/js/jq.js: node_modules/jquery/dist/jquery.min.js
 all: src/js/jq.js
 
 .PHONY: bulk-make-dirs fastrender
-
