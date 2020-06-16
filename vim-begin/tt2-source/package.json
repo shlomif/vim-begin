@@ -9,9 +9,9 @@
   "dependencies": {
     "camel-case": "^3.0.0",
     "html-minifier": "^4.0.0",
-    "jquery": "^3.5.0",
+    "jquery": "^3.5.1",
     "param-case": "^2.1.1",
-    "sass": "^1.26.3",
+    "sass": "^1.26.8",
     "uglify-es": "^3.3.9"
   },
   "devDependencies": {},

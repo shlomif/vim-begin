@@ -34,7 +34,7 @@ $(VIM_BEGIN_SVG): ../vim-begin-logo/Vim-begin-logo.svg
 	cp -f $< $@
 
 
-T2_IMAGES_DEST = $(VIM_BEGIN_SVG)
+WEBSITE_IMAGES_DEST = $(VIM_BEGIN_SVG)
 
 all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 
@@ -46,17 +46,17 @@ all: $(DEST_HTMLS) dest/js/jq.js
 $(HTACCESS_DEST): htaccess.conf
 	cp -f $< $@
 
-T2_SVGS__BASE := $(filter %.svg,$(T2_IMAGES_DEST))
-T2_SVGS__MIN := $(T2_SVGS__BASE:%.svg=%.min.svg)
-T2_SVGS__svgz := $(T2_SVGS__BASE:%.svg=%.svgz)
+WEBSITE_SVGS__BASE := $(filter %.svg,$(WEBSITE_IMAGES_DEST))
+WEBSITE_SVGS__MIN := $(WEBSITE_SVGS__BASE:%.svg=%.min.svg)
+WEBSITE_SVGS__svgz := $(WEBSITE_SVGS__BASE:%.svg=%.svgz)
 
-$(T2_SVGS__MIN): %.min.svg: %.svg
+$(WEBSITE_SVGS__MIN): %.min.svg: %.svg
 	minify --svg-precision 3 -o $@ $<
 
-$(T2_SVGS__svgz): %.svgz: %.min.svg
+$(WEBSITE_SVGS__svgz): %.svgz: %.min.svg
 	gzip --best < $< > $@
 
-min_svgs: $(T2_SVGS__MIN) $(T2_SVGS__svgz)
+min_svgs: $(WEBSITE_SVGS__MIN) $(WEBSITE_SVGS__svgz)
 
 all: min_svgs
 
