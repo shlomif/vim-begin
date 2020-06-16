@@ -35,7 +35,7 @@ WEBSITE_IMAGES_DEST = $(VIM_BEGIN_SVG)
 all: $(GENERATED_CSS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 
 $(DEST_HTMLS): src/js/jq.js $(SRC_TT2S) footer.tt2 blocks.tt2
-	perl process.pl
+	perl bin/tt-render.pl
 
 DEST_HTMLS__PIVOT = dest/about.html
 
