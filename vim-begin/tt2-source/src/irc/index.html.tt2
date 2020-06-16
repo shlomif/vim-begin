@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'IRC Channels for Perl Questions and Answers' -%]
 [% WRAPPER wrap_html %]
 <h2 id="what-is-irc">What is the IRC?</h2>

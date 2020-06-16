@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Resources for Learning about Vim.' -%]
 [% WRAPPER wrap_html %]
 <h2 id="what_to_learn_from">From what to Learn?</h2>

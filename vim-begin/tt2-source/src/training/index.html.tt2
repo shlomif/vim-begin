@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Training' -%]
 [% WRAPPER wrap_html %]
 <p>

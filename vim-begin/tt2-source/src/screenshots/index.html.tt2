@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Screenshots' -%]
 [% WRAPPER wrap_html %]
 <a href="[% base_path %]screenshots/images/gvim-perl-256.png"><img

@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim-related Wikis' -%]
 [% WRAPPER wrap_html %]
 <h2 id="vim_wikia"><a href="http://vim.wikia.com/">The Vim Tips Wiki</a></h2>

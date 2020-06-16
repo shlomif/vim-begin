@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Core Documentation' -%]
 [% WRAPPER wrap_html %]
 <h2 id="core_doc"><a href="http://vimdoc.sourceforge.net/">Vim Core Documentation</a></h2>

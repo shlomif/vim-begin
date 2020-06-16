@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim on Various Platforms and Operating Systems' -%]
 [% WRAPPER wrap_html %]
 <h2 id="note">Note</h2>

@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Recommended Tutorials' -%]
 [% WRAPPER wrap_html %]
 <h2 id="getting_started_with_vim"><a href="http://bilalquadri.com/blog/2012/12/17/getting-started-with-vim/">Getting Started with Vim</a></h2>

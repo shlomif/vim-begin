@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Contributors’ List' -%]
 [% WRAPPER wrap_html %]
 <ul>

@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Web Forums' -%]
 [% WRAPPER wrap_html %]
 <h2 id="stackoverflow"><a href="http://stackoverflow.com/">Stack Overflow</a></h2>

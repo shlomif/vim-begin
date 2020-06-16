@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Who is Using Vim?' -%]
 [% WRAPPER wrap_html %]
 <p>

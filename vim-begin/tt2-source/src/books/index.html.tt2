@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Recommended Books for Learning Vim' -%]
 [% WRAPPER wrap_html %]
 <div id="home">

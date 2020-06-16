@@ -12,7 +12,10 @@ use File::Copy qw( copy );
 
 my $template = Template->new(
     {
-        INCLUDE_PATH => ".",
+        COMPILE_DIR  => ( $ENV{TMPDIR} // "/tmp" ) . "/vim-begin-tt2-cache",
+        COMPILE_EXT  => ".ttc",
+        INCLUDE_PATH => [ ".", "./lib", ],
+        PRE_PROCESS  => ["lib/blocks.tt2"],
         POST_CHOMP   => 1,
         RELATIVE     => 1,
         ENCODING     => 'utf8',

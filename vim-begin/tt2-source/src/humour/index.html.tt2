@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Humour' -%]
 [% WRAPPER wrap_html %]
 <h2 id="vi_humour"><a href="http://www.texteditors.org/cgi-bin/wiki.pl?ViHumor">Vi Humor</a> on the Text Editors Wiki</h2>

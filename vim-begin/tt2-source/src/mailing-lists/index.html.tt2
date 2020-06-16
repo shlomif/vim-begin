@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Mailing Lists' -%]
 [% WRAPPER wrap_html %]
 <div id="home">

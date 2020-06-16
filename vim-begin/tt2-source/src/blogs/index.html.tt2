@@ -1,4 +1,3 @@
-[%- PROCESS "blocks.tt2" -%]
 [%- SET title = 'Vim Blogs' -%]
 [% WRAPPER wrap_html %]
 <h2 id="daily_vim"><a href="http://dailyvim.blogspot.com/">Daily Vim</a></h2>
