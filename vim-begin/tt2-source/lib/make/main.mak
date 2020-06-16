@@ -1,4 +1,3 @@
-# GENERATED_HTMLS = _site/index.html _site/books/index.html _site/mailing-lists/index.html
 D = dest
 
 SHELL = bash
@@ -11,8 +10,6 @@ SASS_STYLE = compressed
 # SASS_STYLE = expanded
 SASS_CMD = sass --style $(SASS_STYLE)
 
-SOURCES = $(shell find src -name '*.html') _config.yml atom.xml CNAME README.textile
-GENERATED_HTMLS = $(shell find _site -name '*.html')
 GENERATED_CSS = src/css/style.css
 
 SCREENSHOTS_PNGS = src/screenshots/images/romainl-macvim1.png src/screenshots/images/romainl-macvim2.png src/screenshots/images/gvim-perl-256.png
