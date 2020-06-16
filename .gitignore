@@ -15,6 +15,7 @@
 /vim-begin/tt2-source/bin/gen-rpm-for-build-deps
 /vim-begin/tt2-source/bin/html-min-cli-config-file.conf
 /vim-begin/tt2-source/bin/sort-check-spelling-file
+/vim-begin/tt2-source/bin/spell-checker-iface
 /vim-begin/tt2-source/bin/spell.bash
 /vim-begin/tt2-source/bin/translate-Vered-XML
 /vim-begin/tt2-source/dest
