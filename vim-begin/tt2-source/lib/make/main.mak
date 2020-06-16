@@ -41,6 +41,10 @@ all: $(GENERATED_CSS) $(DESTS) $(HTACCESS_DEST) $(SCREENSHOTS_PNGS_PREVIEWS)
 $(DEST_HTMLS): src/js/jq.js $(SRC_TT2S) footer.tt2 blocks.tt2
 	perl process.pl
 
+DEST_HTMLS__PIVOT = dest/about.html
+
+fastrender: $(DEST_HTMLS__PIVOT)
+
 all: $(DEST_HTMLS) dest/js/jq.js
 
 $(HTACCESS_DEST): htaccess.conf
@@ -69,6 +73,8 @@ $(GENERATED_CSS) : lib/sass/jqui-override.scss lib/sass/style.scss lib/sass/prin
 $(SCREENSHOTS_PNGS_PREVIEWS): %-preview.png: %.png
 	convert $< -resize 400 $@
 
+bulk-make-dirs:
+
 upload_beta: all
 	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL_BETA)
 
@@ -82,3 +88,6 @@ src/js/jq.js: node_modules/jquery/dist/jquery.min.js
 	cp -f $< $@
 
 all: src/js/jq.js
+
+.PHONY: bulk-make-dirs fastrender
+
