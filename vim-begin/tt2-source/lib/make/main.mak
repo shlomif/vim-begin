@@ -55,7 +55,7 @@ $(WEBSITE_SVGS__MIN): %.min.svg: %.svg
 	minify --svg-precision 3 -o $@ $<
 
 $(WEBSITE_SVGS__svgz): %.svgz: %.min.svg
-	gzip --best < $< > $@
+	gzip --best -n < $< > $@
 
 min_svgs: $(WEBSITE_SVGS__MIN) $(WEBSITE_SVGS__svgz)
 
