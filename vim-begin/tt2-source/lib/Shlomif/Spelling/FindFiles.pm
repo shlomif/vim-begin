@@ -3,15 +3,12 @@ package Shlomif::Spelling::FindFiles;
 use strict;
 use warnings;
 
-use MooX qw/late/;
-use List::MoreUtils qw/any/;
+use Moo;
+use List::Util 1.34 qw/ any /;
 
-use HTML::Spelling::Site::Finder;
+use HTML::Spelling::Site::Finder ();
 
-my @prunes =
-(
-    qr#tutorials/getting-started-with-vim#,
-);
+my @prunes = ( qr#tutorials/getting-started-with-vim#, );
 
 sub list_htmls
 {
@@ -29,4 +26,3 @@ sub list_htmls
 }
 
 1;
-
