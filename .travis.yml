@@ -10,7 +10,7 @@ before_install:
     - eval "$(GIMME_GO_VERSION=1.11 gimme)"
     - go get -u github.com/tdewolff/minify/cmd/minify
     - eval "$(perl -Mlocal::lib=$HOME/perl_modules)"
-    - cpanm Code::TidyAll::TestCount HTML::Spelling::Site Perl::Critic Perl::Tidy Template Test::HTML::Recursive::DeprecatedTags Test::Code::TidyAll Test::TrailingSpace
+    - cpanm Code::TidyAll::Plugin::TestCount HTML::Spelling::Site Perl::Critic Perl::Tidy Template Test::HTML::Recursive::DeprecatedTags Test::Code::TidyAll Test::TrailingSpace
     - gem install sass compass compass-blueprint
     - sudo -H `which python3` -m pip install cookiecutter pycotap vnu_validator
 script: "m() { SKIP_SPELL_CHECK=1 make \"$@\" ; } ; cd vim-begin/tt2-source/ && bash -x bin/install-npm-deps.sh && ./gen-helpers && ( PATH+=\":$PWD/node_modules/.bin\"; m && m test || exit 1 )"
