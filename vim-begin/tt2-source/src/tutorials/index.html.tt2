@@ -16,5 +16,6 @@ a hyperlink and <kbd>Ctrl+T</kbd> to return to the position before the last
 link.
 </p>
 
+<h2 id="indenting_python"><a href="https://henry.precheur.org/vim/python.html">Indenting Python with Vim</a></h2>
 
 [% END %]
