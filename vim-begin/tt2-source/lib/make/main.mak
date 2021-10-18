@@ -2,6 +2,7 @@ D = dest
 PRE_DEST := $(D)
 POST_DEST := $(D)
 PERL := perl
+SASS_DEBUG_FLAGS :=
 
 SHELL = bash
 
@@ -9,9 +10,9 @@ all:
 
 include lib/make/include.mak
 
-SASS_STYLE = compressed
-# SASS_STYLE = expanded
-SASS_CMD = sass --style $(SASS_STYLE)
+SASS_STYLE := compressed
+# SASS_STYLE := expanded
+SASS_CMD = pysassc $(SASS_DEBUG_FLAGS) --style $(SASS_STYLE)
 
 GENERATED_CSS = src/css/style.css
 
@@ -71,10 +72,7 @@ min_svgs: $(WEBSITE_SVGS__MIN) $(WEBSITE_SVGS__svgz)
 all: min_svgs
 
 $(GENERATED_CSS) : lib/sass/jqui-override.scss lib/sass/style.scss lib/sass/print.scss lib/sass/vim_syntax_highlighting.scss
-	# $(SASS_CMD) lib/sass/style.scss $@
-	compass compile
-	mkdir -p $(D)/css
-	cp -f src/css/*.css $(D)/css/
+	$(SASS_CMD) lib/sass/style.scss $@
 
 $(SCREENSHOTS_PNGS_PREVIEWS): %-preview.png: %.png
 	convert $< -resize 400 $@
