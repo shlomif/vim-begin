@@ -54,7 +54,7 @@ fastrender: $(DEST_HTMLS__PIVOT)
 
 all: $(DEST_HTMLS) dest/js/jq.js
 
-$(HTACCESS_DEST): htaccess.conf
+$(HTACCESS_DEST): $(DEST_HTMLS) htaccess.conf
 	cp -f $< $@
 
 WEBSITE_SVGS__BASE := $(filter %.svg,$(WEBSITE_IMAGES_DEST))
