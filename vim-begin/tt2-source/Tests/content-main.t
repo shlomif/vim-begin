@@ -6,8 +6,10 @@ use Test::More tests => 2;
 
 use Path::Tiny qw/ cwd path tempdir tempfile /;
 
+my $DEST_DIR = cwd()->child("dest");
+
 {
-    my $fh      = cwd()->child("dest")->child(".htaccess");
+    my $fh      = $DEST_DIR->child(".htaccess");
     my $content = $fh->slurp_utf8();
 
     # TEST
@@ -15,7 +17,7 @@ use Path::Tiny qw/ cwd path tempdir tempfile /;
 }
 
 {
-    my $fh      = cwd()->child("dest")->child( "css", "style.css" );
+    my $fh      = $DEST_DIR->child( "css", "style.css" );
     my $content = $fh->slurp_utf8();
 
     # TEST
