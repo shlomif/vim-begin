@@ -26,6 +26,8 @@ RSYNC_EXTRA_OPTS =
 HTACCESS_DEST = $(D)/.htaccess
 
 UPLOAD_URL = hostgator:domains/vim.begin-site.org/
+# Due to https://vim.begin-site.org being problematic
+UPLOAD_URL_CHILD_DIR = hostgator:domains/begin-site.org/vim/
 UPLOAD_URL_BETA = hostgator:domains/vim.begin-site.org/__Beta-ugrt/
 
 VIM_BEGIN_SVG := dest/images/vim-begin.svg
@@ -54,8 +56,10 @@ fastrender: $(DEST_HTMLS__PIVOT)
 
 all: $(DEST_HTMLS) dest/js/jq.js
 
-$(HTACCESS_DEST): $(DEST_HTMLS) htaccess.conf
-	cp -f $< $@
+HTACCESS_SRC = htaccess.conf
+
+$(HTACCESS_DEST): $(HTACCESS_SRC) $(DEST_HTMLS)
+	cp -f $(HTACCESS_SRC) $@
 
 WEBSITE_SVGS__BASE := $(filter %.svg,$(WEBSITE_IMAGES_DEST))
 WEBSITE_SVGS__MIN := $(WEBSITE_SVGS__BASE:%.svg=%.min.svg)
@@ -84,6 +88,7 @@ upload_beta: all
 
 upload: all
 	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL)
+	$(RSYNC) --exclude='**~' --exclude='**/.*.swp' $(RSYNC_EXTRA_OPTS) $(D)/ $(UPLOAD_URL_CHILD_DIR)
 
 test: all
 	prove Tests/*.{py,t}
