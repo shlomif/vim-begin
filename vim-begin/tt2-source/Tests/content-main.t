@@ -2,7 +2,7 @@
 
 use strict;
 use warnings;
-use Test::More tests => 1;
+use Test::More tests => 2;
 
 use Path::Tiny qw/ cwd path tempdir tempfile /;
 
@@ -12,4 +12,12 @@ use Path::Tiny qw/ cwd path tempdir tempfile /;
 
     # TEST
     unlike( $content, qr#<html#ims, "dot-htaccess is not an html file", );
+}
+
+{
+    my $fh      = cwd()->child("dest")->child( "css", "style.css" );
+    my $content = $fh->slurp_utf8();
+
+    # TEST
+    cmp_ok( length($content), '>', 200, "style.css is long enough", );
 }

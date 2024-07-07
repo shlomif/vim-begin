@@ -78,6 +78,13 @@ all: min_svgs
 $(GENERATED_CSS) : lib/sass/jqui-override.scss lib/sass/style.scss lib/sass/print.scss lib/sass/vim_syntax_highlighting.scss
 	$(SASS_CMD) lib/sass/style.scss $@
 
+DEST_CSS = dest/css/style.css
+$(DEST_CSS): $(GENERATED_CSS)
+	mkdir -p $$(dirname $@)
+	cp -f $< $@
+
+all: $(DEST_CSS)
+
 $(SCREENSHOTS_PNGS_PREVIEWS): %-preview.png: %.png
 	convert $< -resize 400 $@
 
