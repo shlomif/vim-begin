@@ -7,11 +7,11 @@
     "lib": "lib"
   },
   "dependencies": {
-    "camel-case": "^4.1.2",
+    "camel-case": "^5.0.0",
     "html-minifier": "^4.0.0",
     "jquery": "^3.7.1",
-    "param-case": "^3.0.4",
-    "prettier": "^3.3.2"
+    "param-case": "^4.0.0",
+    "prettier": "^3.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
